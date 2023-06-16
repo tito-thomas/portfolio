@@ -1,0 +1,22 @@
+﻿<head>
+
+    @{
+        ViewBag.Title = "Javascript Chart Practice";
+    }
+
+    @section Scripts {
+        <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+        <script type="module" src="~/Scripts/custom/Charts.js"></script>
+    }
+
+
+</head>
+
+<body>
+    <center>
+        <h3>@ViewBag.Title.</h3>
+        <p>Sample page for charts.</p>
+
+        <div id="mychart"></div>
+    </center>
+</body>
