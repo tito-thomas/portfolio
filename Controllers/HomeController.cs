@@ -14,7 +14,7 @@ namespace PersonalWebApp.Controllers
             return View();
         }
 
-        public ActionResult Charts()
+        public ActionResult Projects()
         {
             //ViewBag.Message = "Your application description page.";
 
@@ -29,7 +29,7 @@ namespace PersonalWebApp.Controllers
 
         public FilePathResult CVDownload()
         {
-            return new FilePathResult(@"~\Content\Assets\CV - Tito Thomas (2022).pdf", "application/pdf");
+            return new FilePathResult(@"~\Content\Assets\CV 2023.pdf", "application/pdf");
 
         }
     }
