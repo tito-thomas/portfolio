@@ -3,10 +3,13 @@ function homeNavStyling() {
     const navbar = document.querySelector("#mynav")
     navbar.style.transition = "0.4s"
     if (window.scrollY != 0) {
-        navbar.style.backgroundColor = "rgb(3 36 86)"
+        navbar.style.backgroundColor = "rgb(3, 36, 86, 0.85)";
+        navbar.style.backdropFilter = "blur(5px)"
+        
     }
     else {
         navbar.style.backgroundColor = "transparent"
+        navbar.style.backdropFilter = ""
     }
  }
 
