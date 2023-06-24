@@ -1,6 +1,9 @@
 ﻿body {
-    display:flex;
-    margin-top:50px;
+    display: none;
+    margin-top: 50px;
+    flex-direction: column;
+    color: #4f4a4a;
+    background-color: #040c1e;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -69,27 +72,49 @@ p{
     font-size: 22px;
     display: flex;
     flex-direction: row;
-    column-gap: 200px;
+    column-gap: 100px;
     justify-content: center;
 }
 
 .selfie {
-    width: 440px;
-    height: 400px;
+    width: 600px;
+    height: 500px;
     float: right;
-
+    animation-name:selfie;
+    animation-duration:0.7s;
 }
 
-.bio p{
-    width:400px;
+@keyframes selfie{
+    0% {
+        transform: translateX(300%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+.bio p {
+    width: 400px;
+    margin-top: 8%;
 }
 
 .desc {
-    width: 300px;
+    width: 500px;
+    animation-name:desc;
+    animation-duration:0.7s;
+    color: #d9edf7;
 }
 
-.desc h2{
-    font-size:60px;
+@keyframes desc{
+    0% {
+        transform: translateX(-300%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+.desc h2 {
+    font-size: 60px;
+    color: #d9edf7;
 }
 
 .homenavbar{
@@ -131,10 +156,12 @@ p{
 .footer {
     height: 300px;
     background-color: rgb(3, 36, 86);
-    margin-left: -15px;
-    margin-right: -15px;
-    z-index:1;
-    position:absolute;
+    z-index: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    z-index: 10;
+    margin-top: 150px;
 }
 .footer p{
     color:white;
@@ -262,10 +289,11 @@ p{
 }
 
 .largerow {
-    margin-top: 8em;
+    margin-top: 30vh;
     height: 500px;
     margin-left: -15px;
     margin-right: -15px;
+    background-color: #040c1e;
 }
 
 .proj-row {
@@ -274,22 +302,26 @@ p{
     margin-left: -15px;
     margin-right: -15px;
     margin-top: 20%;
-    background-color: #f3f3f3;
+    background-color: #1a1a1c;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30%;
 }
 
 .proj1 {
     display: flex;
     height: 40%;
     width: 100%;
-    margin-top: 200px;
     padding-left: 50px;
     padding-right: 50px;
     column-gap: 6%;
-    transform: translateY(15em);
+    transform: translateY(25em);
 }
 .proj1 img{
-    width: 48%;
-    height: 79%;
+    transform: translateY(-5%);
+    scale: 0.9;
+    height: 620px;
+    width: 920px;
     
 }
 
@@ -298,10 +330,12 @@ p{
     height: 250px;
     z-index: 2;
     position: absolute;
-    transform: translateY(200px);
+    transform: translateY(170px);
     width: 100%;
     margin-top: -20%;
     text-align: center;
+    opacity: 30%;
+    color: #cad2d7;
 }
 
 
@@ -309,20 +343,22 @@ p{
 .proj1-desc {
     width: 35%;
     font-size: 18px;
+    color: white;
 }
 
 .proj1-desc h2 {
     font-size: 50px;
+    color: white;
 }
 
 /*anime slideshow*/
 
 .slidecover {
-    background-color: #ff000000;
-    width: 660px;
-    height: 65%;
+    background-color: #000000;
+    width: 648px;
+    height: 71%;
     z-index: 10;
-    transform: translate(15%,5%);
+    transform: translate(21%,12%);
     position: absolute;
     overflow: hidden;
     border-top-right-radius: 2%;
@@ -331,16 +367,17 @@ p{
 
 
 .slider img {
-    height: 72%;
+    height: 88%;
+    transform: translate(-20%, -15%);
+    width: 80%;
 }
 
 .slide-container {
-    width: 220%;
+    width: 206%;
     height: 140%;
     transform: translateX(0%);
     overflow: hidden;
 }
-
 .slider{
     position: absolute;
     display: flex;
@@ -355,12 +392,20 @@ p{
     width: 100%;
 }
 
+.slider2 img{
+    width: 100%;
+    height: 75%;
+    transform: translateY(5%);
+}
+
 .button-cont {
     font-size: 20px;
     height: 4em;
+    width:14em;
     display: flex;
     justify-content: center;
     margin-top: 3em;
+    transition: 0.2s ease-in;
 }
 
 .button-cont button{
@@ -369,6 +414,16 @@ p{
     border-width: 0;
     width: 14em;
     border-radius: 3em;
+    transition: 0.2s ease-in;
+  
+}
+
+.button-cont:hover{
+    transform:scale(1.02);
+}
+
+.button-cont button:hover {
+    box-shadow: 6px 8px 8px rgb(10 10 10);
 }
 
 .proj2 {
@@ -376,13 +431,12 @@ p{
     display: flex;
     height: 40%;
     width: 100%;
-    margin-top: 200px;
     padding-left: 50px;
     padding-right: 50px;
     column-gap: 8%;
 }
 
-.proj2 img{
+.proj2-mac{
     height: 90%;
     margin-top: 2%;
 }
@@ -400,7 +454,7 @@ p{
 }
 
 .slidecover2 {
-    background-color: #ffffff00;
+    background-color: #000000;
     width: 32.8%;
     height: 27.5%;
     z-index: 10;

@@ -29,3 +29,9 @@ function checkHomePage() {
 }
 
 checkHomePage()
+
+//wait for all page elements to load before displaying
+window.onload = function () {
+    const page = document.querySelector("body")
+    page.style.display = "flex";
+}
