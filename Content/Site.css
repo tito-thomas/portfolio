@@ -129,10 +129,12 @@ p{
 }
 
 .footer {
-    height: 80px;
+    height: 300px;
     background-color: rgb(3, 36, 86);
     margin-left: -15px;
     margin-right: -15px;
+    z-index:1;
+    position:absolute;
 }
 .footer p{
     color:white;
@@ -275,10 +277,9 @@ p{
     background-color: #f3f3f3;
 }
 
-.proj-one {
-    position: absolute;
+.proj1 {
     display: flex;
-    height: 72%;
+    height: 40%;
     width: 100%;
     margin-top: 200px;
     padding-left: 50px;
@@ -286,9 +287,9 @@ p{
     column-gap: 6%;
     transform: translateY(15em);
 }
-.proj-one img{
-    width: 50%;
-    height: 45%;
+.proj1 img{
+    width: 48%;
+    height: 79%;
     
 }
 
@@ -303,47 +304,117 @@ p{
     text-align: center;
 }
 
-.projone-dec {
-    transform: translateY(15em);
-}
 
-.projone-desc {
-    width: 45%;
+
+.proj1-desc {
+    width: 35%;
     font-size: 18px;
 }
 
-.projone-desc h2 {
-    font-size: 60px;
+.proj1-desc h2 {
+    font-size: 50px;
 }
 
 /*anime slideshow*/
 
 .slidecover {
-    background-color: gray;
-    width: 680px;
-    height: 37%;
+    background-color: #ff000000;
+    width: 660px;
+    height: 65%;
     z-index: 10;
     transform: translate(15%,5%);
     position: absolute;
-    border-radius: 2%;
-    overflow:hidden;
+    overflow: hidden;
+    border-top-right-radius: 2%;
+    border-top-left-radius: 2%;
 }
 
 
 .slider img {
-
+    height: 72%;
 }
 
 .slide-container {
-    width: 200%;
-    height: 225%;
+    width: 220%;
+    height: 140%;
     transform: translateX(0%);
     overflow: hidden;
 }
 
-.slider {
+.slider{
     position: absolute;
     display: flex;
     height: 100%;
     width: 100%;
 }
+
+.slider2{
+    position: absolute;
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.button-cont {
+    font-size: 20px;
+    height: 4em;
+    display: flex;
+    justify-content: center;
+    margin-top: 3em;
+}
+
+.button-cont button{
+    background-color: rgb(5 50 118);
+    color: white;
+    border-width: 0;
+    width: 14em;
+    border-radius: 3em;
+}
+
+.proj2 {
+    background-color: white;
+    display: flex;
+    height: 40%;
+    width: 100%;
+    margin-top: 200px;
+    padding-left: 50px;
+    padding-right: 50px;
+    column-gap: 8%;
+}
+
+.proj2 img{
+    height: 90%;
+    margin-top: 2%;
+}
+
+
+.proj2-desc {
+    width: 35%;
+    font-size: 18px;
+    margin-left: 100px;
+    margin-top: 5%;
+}
+
+.proj2-desc h2 {
+    font-size: 50px;
+}
+
+.slidecover2 {
+    background-color: #ffffff00;
+    width: 32.8%;
+    height: 27.5%;
+    z-index: 10;
+    transform: translate(154.2%,20%);
+    position: absolute;
+    overflow: hidden;
+    border-top-right-radius: 2%;
+    border-top-left-radius: 2%;
+}
+
+.slide-container2 {
+    width: 101%;
+    height: 140%;
+    transform: translate(-1%,-5%);
+    overflow: hidden;
+}
+
