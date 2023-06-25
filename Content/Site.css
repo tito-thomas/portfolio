@@ -335,7 +335,7 @@ p{
     margin-top: -20%;
     text-align: center;
     opacity: 30%;
-    color: #cad2d7;
+    color: #acd3eb;
 }
 
 
@@ -385,18 +385,18 @@ p{
     width: 100%;
 }
 
-.slider2{
+.slider2 {
     position: absolute;
     display: flex;
-    height: 100%;
-    width: 100%;
 }
 
 .slider2 img{
-    width: 100%;
-    height: 75%;
-    transform: translateY(5%);
+    width: 650px;
+    height: 500px;
+    transform: translateY(10%);
+    object-fit: cover;
 }
+
 
 .button-cont {
     font-size: 20px;
@@ -468,7 +468,6 @@ p{
 .slide-container2 {
     width: 101%;
     height: 140%;
-    transform: translate(-1%,-5%);
-    overflow: hidden;
+    transform: translate(-0%,-5%);
 }
 
