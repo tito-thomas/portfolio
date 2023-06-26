@@ -1,4 +1,8 @@
-﻿body {
+﻿html{
+    scroll-behavior:smooth;
+}
+
+body {
     display: none;
     margin-top: 50px;
     flex-direction: column;
@@ -154,20 +158,30 @@ p{
 }
 
 .footer {
-    height: 150px;
-    background-color: rgb(3, 36, 86);
+    height: 300px;
     z-index: 1;
     position: relative;
     display: flex;
     justify-content: center;
     z-index: 10;
+    flex-direction:column;
+    padding:5%;
 }
-.footer p{
-    color:white;
-    font-family:Poppins;
-    text-align:center;
+.footer-text {
+    color: white;
+    font-family: Poppins;
+    text-align: center;
     padding-top: 30px;
-    margin:auto;
+    margin: auto;
+}
+
+.footer-title {
+    color: white;
+    font-family: Poppins;
+    text-align: center;
+    padding-top: 30px;
+    margin: auto;
+    font-size:20px;
 }
 
 .coverimg {
@@ -178,7 +192,7 @@ p{
 .coverbg {
     min-height: 50%;
     min-width: 40%;
-    background-color: #7495f1;
+    background-color: rgb(32 62 145 / 50%);
     margin: auto;
     position: absolute;
     z-index: 10;
@@ -186,10 +200,9 @@ p{
     top: 25%;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
-    animation-name:coverslide;
-    animation-duration:1s;
-    /*margin-right: -40%;*/
-    /*#243973;*/
+    animation-name: coverslide;
+    animation-duration: 1s;
+    padding: 2%;
 }
 
 @keyframes coverslide{
@@ -202,6 +215,13 @@ p{
 }
 
 .covericons {
+    display: flex;
+    flex-direction: row;
+    column-gap: 80px;
+    justify-content: center;
+}
+
+.footericons {
     display: flex;
     flex-direction: row;
     column-gap: 80px;
@@ -229,7 +249,7 @@ p{
 }
 
 .covertext{
-    margin-top:40px;
+    margin-top:5%;
 }
 .coverbg > *{
     text-align:center;
@@ -237,7 +257,7 @@ p{
 }
 
 .coverbg h4 {
-    font-size: 80px;
+    font-size: 130px;
     font-family: Lexend;
 }
 
@@ -247,7 +267,7 @@ p{
 }
 
 .row{
-    height:600px;
+    height:100vh;
     position:relative;
     overflow:hidden;
 }
@@ -289,7 +309,7 @@ p{
 
 .largerow {
     margin-top: 30vh;
-    height: 900px;
+    height: 1500px;
     margin-left: -15px;
     margin-right: -15px;
     background-color: #040c1e;
@@ -376,18 +396,6 @@ p{
     display: flex;
 }
 
-.slider2 {
-    position: absolute;
-    display: flex;
-}
-
-.slider2 img{
-    width: 650px;
-    height: 500px;
-    transform: translateY(10%);
-    object-fit: cover;
-}
-
 
 .button-cont {
     font-size: 20px;
@@ -445,6 +453,12 @@ p{
     margin-top: 2%;
 }
 
+
+.slider2 {
+    position: absolute;
+    display: flex;
+}
+
 .slidecover2 {
     background-color: #000000;
     width: 650px;
@@ -464,6 +478,6 @@ p{
 }
 
 .slider2 img {
-    width: 800px;
+    width: 880px;
     height: 600px;
 }
