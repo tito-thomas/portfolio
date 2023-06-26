@@ -16,7 +16,7 @@ namespace PersonalWebApp
            
             routes.MapRoute(
                 name: "test",
-                url: "home/CV Tito Thomas - 2022",
+                url: $"home/CV Tito Thomas - {@DateTime.Now.Year}",
                 defaults: new { controller = "Home", action = "CVDownload"}
             );
 

@@ -154,14 +154,13 @@ p{
 }
 
 .footer {
-    height: 300px;
+    height: 150px;
     background-color: rgb(3, 36, 86);
     z-index: 1;
     position: relative;
     display: flex;
     justify-content: center;
     z-index: 10;
-    margin-top: 150px;
 }
 .footer p{
     color:white;
@@ -290,7 +289,7 @@ p{
 
 .largerow {
     margin-top: 30vh;
-    height: 500px;
+    height: 900px;
     margin-left: -15px;
     margin-right: -15px;
     background-color: #040c1e;
@@ -298,20 +297,17 @@ p{
 
 .proj-row {
     position: relative;
-    height: 1500px;
+    height: 100%;
     margin-left: -15px;
     margin-right: -15px;
-    margin-top: 20%;
     background-color: #1a1a1c;
     display: flex;
     flex-direction: column;
-    row-gap: 30%;
+    row-gap: 500px;
 }
 
 .proj1 {
     display: flex;
-    height: 40%;
-    width: 100%;
     padding-left: 50px;
     padding-right: 50px;
     column-gap: 6%;
@@ -322,12 +318,10 @@ p{
     scale: 0.9;
     height: 620px;
     width: 920px;
-    
 }
 
 .section-title {
     font-size: 300px;
-    height: 250px;
     z-index: 2;
     position: absolute;
     transform: translateY(170px);
@@ -356,7 +350,7 @@ p{
 .slidecover {
     background-color: #000000;
     width: 648px;
-    height: 71%;
+    height: 425px;
     z-index: 10;
     transform: translate(21%,12%);
     position: absolute;
@@ -379,10 +373,7 @@ p{
     overflow: hidden;
 }
 .slider{
-    position: absolute;
     display: flex;
-    height: 100%;
-    width: 100%;
 }
 
 .slider2 {
@@ -429,16 +420,9 @@ p{
 .proj2 {
     background-color: white;
     display: flex;
-    height: 40%;
-    width: 100%;
     padding-left: 50px;
     padding-right: 50px;
     column-gap: 8%;
-}
-
-.proj2-mac{
-    height: 90%;
-    margin-top: 2%;
 }
 
 
@@ -453,12 +437,20 @@ p{
     font-size: 50px;
 }
 
+.proj2 img {
+    transform: translateY(-5%);
+    scale: 0.9;
+    height: 620px;
+    width: 920px;
+    margin-top: 2%;
+}
+
 .slidecover2 {
     background-color: #000000;
-    width: 32.8%;
-    height: 27.5%;
+    width: 650px;
+    height: 425px;
     z-index: 10;
-    transform: translate(154.2%,20%);
+    transform: translate(155.2%,20%);
     position: absolute;
     overflow: hidden;
     border-top-right-radius: 2%;
@@ -466,8 +458,12 @@ p{
 }
 
 .slide-container2 {
-    width: 101%;
-    height: 140%;
-    transform: translate(-0%,-5%);
+    width: 100%;
+    height: 100%;
+    transform: translate(-10%,-20%);
 }
 
+.slider2 img {
+    width: 800px;
+    height: 600px;
+}
