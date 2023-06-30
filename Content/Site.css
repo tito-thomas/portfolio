@@ -8,6 +8,7 @@ body {
     flex-direction: column;
     color: #4f4a4a;
     background-color: #040c1e;
+    overflow-x:hidden;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -71,7 +72,7 @@ p{
 }
 
 .bio {
-    margin-top: 2em;
+    padding-top: 31vh;
     font-family: Poppins;
     font-size: 22px;
     display: flex;
@@ -239,6 +240,28 @@ p{
     transform:scale(1.3);
 }
 
+.page-scroll {
+    background: rgb(0 4 65 / 0%);
+    width: 12rem;
+    height: 10rem;
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    text-align:center;
+    transition: 0.1s ease-in;
+}
+.page-scroll:hover{
+    transform:translateY(-1rem);
+    cursor:pointer;
+
+}
+
+.material-symbols-outlined {
+    font-size:100px !important;
+    color:white;
+}
+
+
 .giticon {
     width: 60px;
     transition: 0.2s ease-in;
@@ -308,8 +331,7 @@ p{
 }
 
 .largerow {
-    margin-top: 30vh;
-    height: 1500px;
+    height: 2000px;
     margin-left: -15px;
     margin-right: -15px;
     background-color: #040c1e;
@@ -342,17 +364,24 @@ p{
 
 .section-title {
     font-size: 300px;
-    z-index: 2;
+    z-index: 0;
     position: absolute;
-    transform: translateY(170px);
     width: 100%;
-    margin-top: -20%;
     text-align: center;
     opacity: 30%;
     color: #acd3eb;
 }
 
-
+.skills-title {
+    width: 50%;
+    padding-left: 3%;
+    transform: translateY(50%);
+    font-size: 400px;
+}
+.proj-title {
+    transform: translateY(-60%);
+    width: 100vh;
+}
 
 .proj1-desc {
     width: 35%;

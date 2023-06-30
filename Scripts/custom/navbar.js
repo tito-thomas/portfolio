@@ -13,8 +13,15 @@ function homeNavStyling() {
     }
  }
 
-
 function checkHomePage() {
+    //no longer applying just on home page.
+    var url = document.URL.split('/');
+    const navbar = document.querySelector("#mynav");
+    document.body.style.marginTop = "0";
+    navbar.style.backgroundColor = "transparent";
+    window.addEventListener("scroll", homeNavStyling);
+}
+/*function checkHomePage() {
 
     var url = document.URL.split('/')
     //check if we are on the home page
@@ -26,7 +33,7 @@ function checkHomePage() {
         window.addEventListener("scroll", homeNavStyling)
     }
     
-}
+}*/
 
 checkHomePage()
 

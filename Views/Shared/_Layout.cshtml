@@ -13,8 +13,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lexend" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-
-
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
 </head>
 <body>
@@ -32,7 +31,7 @@
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li><a href="./#project1">Projects</a></li>
+                    <li><a href="#project1">Projects</a></li>
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
                     <li>
                         <a href="@Url.Action("CVDownload", "Home")" target="_blank">Download CV<i class='material-icons'>download</i></a>
@@ -51,7 +50,7 @@
     <div>
 
         <footer class="footer">
-            <b><p class="footer-title">Socials</p></b><br />
+            <p class="footer-title"><b>Socials</b> </p><br />
             <div class="footericons">
                 <a href="https://www.linkedin.com/in/titot/" target="_blank">
                     <img class="linkedicon" src="@Url.Content("/Content/Assets/linkedin.png")" />
