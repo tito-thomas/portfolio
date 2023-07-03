@@ -72,7 +72,7 @@ p{
 }
 
 .bio {
-    padding-top: 31vh;
+    padding: 31vh;
     font-family: Poppins;
     font-size: 22px;
     display: flex;
@@ -331,10 +331,11 @@ p{
 }
 
 .largerow {
-    height: 2000px;
     margin-left: -15px;
     margin-right: -15px;
     background-color: #040c1e;
+    display:flex;
+    flex-direction:column;
 }
 
 .proj-row {
@@ -365,7 +366,6 @@ p{
 .section-title {
     font-size: 300px;
     z-index: 0;
-    position: absolute;
     width: 100%;
     text-align: center;
     opacity: 30%;
@@ -373,14 +373,36 @@ p{
 }
 
 .skills-title {
-    width: 50%;
+    width: 75%;
     padding-left: 3%;
-    transform: translateY(50%);
     font-size: 400px;
 }
+
+.skills{
+
+}
+
+.skills-container {
+    display: flex;
+    column-gap: 15rem;
+    justify-content: center;
+    margin-top: 10rem;
+    padding: 10rem;
+}
+
+.skill-item {
+    width: 400px;
+    height: 300px;
+    background-color: rgba(3, 36, 86);
+    color:white;
+    display: flex;
+    justify-content: center;
+}
+
 .proj-title {
     transform: translateY(-60%);
     width: 100vh;
+    position: absolute;
 }
 
 .proj1-desc {
