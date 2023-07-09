@@ -31,8 +31,8 @@
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li><a href="#skills">Skills</a></li>
                     <li><a href="#project1">Projects</a></li>
+                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
                     <li>
                         <a href="@Url.Action("CVDownload", "Home")" target="_blank">Download CV<i class='material-icons'>download</i></a>
                     </li>
@@ -53,13 +53,10 @@
             <p class="footer-title"><b>Socials</b> </p><br />
             <div class="footericons">
                 <a href="https://www.linkedin.com/in/titot/" target="_blank">
-                    <img class="linkedicon" src="@Url.Content("/Content/Assets/icons/linkedin.png")" />
+                    <img class="linkedicon" src="@Url.Content("/Content/Assets/linkedin.png")" />
                 </a>
                 <a href="https://github.com/tito-thomas/" target="_blank">
-                    <img class="giticon" src="@Url.Content("/Content/Assets/icons/github.png")" />
-                </a>
-                <a href="mailto:titothomas@hotmail.co.uk"> 
-                    <span class="emailicon material-symbols-outlined">mail</span>
+                    <img class="giticon" src="@Url.Content("/Content/Assets/github.png")" />
                 </a>
             </div>
             <p class="footer-text">&copy; @DateTime.Now.Year - Developed by Tito Thomas with ASP.NET</p>
