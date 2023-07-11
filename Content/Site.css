@@ -18,6 +18,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    overflow:hidden;
 }
 
 /* Override the default bootstrap behavior where horizontal description lists 
@@ -86,18 +87,19 @@ p{
     width: 600px;
     height: 500px;
     float: right;
-    animation-name:selfie;
-    animation-duration:0.7s;
+    animation-name: selfie;
+    animation-duration: 0.7s;
+    transform: translateX(100%);
 }
 
-@keyframes selfie{
+/*@keyframes selfie{
     0% {
         transform: translateX(300%);
     }
     100% {
         transform: translateX(0);
     }
-}
+}*/
 .bio p {
     width: 400px;
     margin-top: 8%;
@@ -105,19 +107,20 @@ p{
 
 .desc {
     width: 500px;
-    animation-name:desc;
-    animation-duration:0.7s;
+    animation-name: desc;
+    animation-duration: 0.7s;
     color: #d9edf7;
+    transform: translateX(-100%);
 }
 
-@keyframes desc{
+/*@keyframes desc{
     0% {
         transform: translateX(-300%);
     }
     100% {
         transform: translateX(0);
     }
-}
+}*/
 .desc h2 {
     font-size: 60px;
     color: #d9edf7;
@@ -250,8 +253,9 @@ p{
     position: absolute;
     bottom: 0;
     right: 50%;
-    text-align:center;
+    text-align: center;
     transition: 0.1s ease-in;
+    margin-bottom:1rem;
 }
 .page-scroll:hover{
     transform:translateY(-1rem);
@@ -501,6 +505,7 @@ p{
 .proj2 {
     background-color: white;
     display: flex;
+    padding:10rem;
     padding-left: 50px;
     padding-right: 50px;
     column-gap: 8%;

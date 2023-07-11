@@ -150,7 +150,7 @@
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Content\Assets\CV - Tito Thomas %282022%29.pdf" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
-    <Content Include="Scripts\custom\Charts.js" />
+    <Content Include="Scripts\custom\animations.js" />
     <Content Include="Scripts\custom\navbar.js" />
     <Content Include="Scripts\custom\slideshow.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />

@@ -5,6 +5,7 @@
     <title>@ViewBag.Title</title>
     @section Scripts {
         <script type="module" src="~/Scripts/custom/slideshow.js"></script>
+        <script type="module" src="~/Scripts/custom/animations.js"></script>
     }
 </head>
 
@@ -38,7 +39,7 @@
 
     <div class="largerow" id="aboutme">
         <div class="bio">
-            <div class="desc">
+            <div class="desc bioitem"  id="biotext">
                 <h2><b>About me</b></h2>
                 <br />
                 <p>
@@ -49,7 +50,7 @@
                     Please see below to view my experience or browse my projects.
                 </p>
             </div>
-            <img class="selfie" src="@Url.Content("/Content/Assets/copy.jpg")" />
+            <img class="selfie bioitem" id="selfie" src="@Url.Content("/Content/Assets/copy.jpg")" />
         </div>
 
         <div class="skills">
