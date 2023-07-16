@@ -37,7 +37,7 @@ class Slideshow {
         const width = this.images[0].clientWidth;
             
         if (this.counter == this.images.length) {
-            console.log("end");
+            //console.log("end");
             this.counter = 0;
             this.slide.style.transition = "none";
             //think of translate values as coordinates not the amount that it moves the element 
@@ -51,7 +51,7 @@ class Slideshow {
             this.counter++;
         }
         //this.counter++;
-        console.log(this.counter)
+        //console.log(this.counter)
             
 
     }

@@ -40,5 +40,6 @@ checkHomePage()
 //wait for all page elements to load before displaying
 window.onload = function () {
     const page = document.querySelector("body")
-    page.style.display = "flex";
+    const content = document.querySelector(".body-content")
+    page.style.visibility = "visible";
 }

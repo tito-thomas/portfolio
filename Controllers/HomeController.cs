@@ -32,6 +32,17 @@ namespace PersonalWebApp.Controllers
             return new FilePathResult(@"~\Content\Assets\CV 2023.pdf", "application/pdf");
 
         }
+
+        public ActionResult AnimeProject()
+        {
+            return View();
+        }
+
+        
+        public ActionResult BitcoinProject()
+        {
+            return View();
+        }
     }
 
 
