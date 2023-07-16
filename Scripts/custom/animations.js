@@ -4,7 +4,6 @@
 
 const tracker = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
-        console.log(entry);
         if (entry.isIntersecting) {
             entry.target.style.transition = "transform 0.5s";
             entry.target.style.transform = "translateX(0)";
@@ -21,3 +20,41 @@ const tracker = new IntersectionObserver((entries) => {
 
 const bioitems = document.querySelectorAll(".bioitem");
 bioitems.forEach((item) => tracker.observe(item));
+
+//Skills Title animation
+
+const skillstitleTracker = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        console.log(entry);
+        if (entry.isIntersecting) {
+            entry.target.style.transform = "translateY(0)";
+            entry.target.style.opacity = "50%";
+
+        }
+    });
+});
+
+const skillsTitle = document.querySelectorAll(".skills-title");
+skillstitleTracker.observe(skillsTitle[0]);
+
+//Skill Icons animaiton
+const skilliconsTracker = new IntersectionObserver((entries) => {
+    const icons = document.querySelectorAll(".lang");
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            icons.forEach((i) => {
+                i.style.transform = "translateX(0)";
+                i.style.opacity = "1";
+            });
+        }
+        else {
+            icons.forEach((i) => {
+                i.style.transform = "translateX(-550%)";
+                i.style.opacity = "0";
+            });
+        }
+    });
+});
+
+const skillsContainer = document.querySelector(".skills-container");
+skilliconsTracker.observe(skillsContainer);
