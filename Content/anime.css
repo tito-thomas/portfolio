@@ -1,0 +1,61 @@
+﻿
+
+.animebody {
+    background: linear-gradient(#050112, #030333, #868dc7);
+}
+
+.anime-container {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.anime-title {
+    font-size: 140px;
+    width: 100%;
+    color: white;
+    padding-top: 8rem;
+    font-family: Staatliches;
+    text-align: center;
+}
+
+.anime-heading {
+    font-size: 100px !important;
+    font-family: 'Poppins';
+    opacity: 90%;
+    color: white;
+    margin-top: 5rem;
+}
+
+.anime-cover {
+    height: 55rem;
+    overflow: hidden;
+    position: relative;
+    margin-left: -23.5px;
+    margin-right: -23.5px;
+    text-align:center
+}
+
+.anime-cover img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 40%;
+    height: 50rem;
+    width: 100%;
+    height: 230%;
+    transform: translateY(-10rem);
+}
+
+.anime-section{
+
+}
+.anime-paragraph {
+    width: 40%;
+    color: #ffffffd6;
+    font-size: 18px;
+    margin-top: 7rem;
+    margin-right: auto;
+    margin-left: 58rem;
+}
+

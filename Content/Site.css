@@ -196,7 +196,7 @@ p{
 
 .coverbg {
     min-height: 50%;
-    min-width: 40%;
+    min-width: 50%;
     background-color: rgb(32 62 145 / 50%);
     margin: auto;
     position: absolute;
@@ -315,7 +315,7 @@ p{
 
 .coverbg h4 {
     font-size: 130px;
-    font-family: Lexend;
+    font-family: 'Staatliches';
 }
 
 .coverbg p {
@@ -442,6 +442,8 @@ p{
     opacity: 0;
     transform: translateX(-550%);
     transition: 0.9s ease-in-out;
+    width: 150px;
+    text-align: center;
 }
 
 .lang:nth-child(1){

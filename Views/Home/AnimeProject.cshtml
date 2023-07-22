@@ -1,10 +1,31 @@
 ﻿@{
-    ViewBag.Title = "Contact";
+    ViewBag.Title = "Anime Recommendation System";
 }
 
-<center>
-    <h2>@ViewBag.Title.</h2>
-    <address>
-        <strong>Email:</strong>   <a href="mailto:titothomas@hotmail.co.uk">titothomas@hotmail.co.uk</a><br />
-    </address>
-</center>
+<head>
+
+</head>
+
+<body class="animebody">
+    <container class="anime-container">
+        <div class="anime-cover">
+            <div class="anime-title">Anime Recommendation<br />System</div>
+            <img src="@Url.Content("/Content/Assets/anime-rec/infopage/valley.jpg")" />
+        </div>
+
+        <div class="anime-section">
+            <div class="section-title anime-heading">Hybrid System</div>
+            <p class="anime-paragraph">I implemented a hybrid model that uses both content-based and collaborative filtering techniques.
+            Content-based and collaborative filtering are common methods for building recommender systems. However, both have drawbacks when 
+            used in isolation. My model attempts to mitigate these pitfalls by using both methods to generate recommendations.</p>
+        </div>
+        <div>
+            <div class="section-title anime-heading">Content-based Filtering</div>
+        </div>
+        <div>
+            <div class="section-title anime-heading">Collaborative Filtering</div>
+        </div>
+
+        <p>Data source can be found <a href="https://www.kaggle.com/datasets/azathoth42/myanimelist?select=anime_cleaned.csv">here</a></p>
+    </container>
+</body>
