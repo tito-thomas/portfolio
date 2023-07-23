@@ -12,20 +12,59 @@
             <div class="anime-title">Anime Recommendation<br />System</div>
             <img src="@Url.Content("/Content/Assets/anime-rec/infopage/valley.jpg")" />
         </div>
+        <div class="anime-section">
+            <div class="section-title anime-heading">System Architecture</div>
+            <p class="large-paragraph">
+                Below is a system architecture diagram for the project at the component level. The system is built
+                using the Model-View-Controller acrchitecure whereby <b>models</b> serve as  blueprints for data access 
+                from a SQL Server database. <b>Views</b> represent the web pages that the user may interact with and these pages 
+                rely on dynmaic data that is processed by the <b>controllers</b>.
+            </p>
+
+            <img class="animeimg" src="@Url.Content("/Content/Assets/anime-rec/infopage/architecture.png")" />
+        </div>
+
+        <div class="covercode">
+            <img class="animeimg filterimg" src="@Url.Content("/Content/Assets/anime-rec/infopage/collab.png")" />
+        </div>
 
         <div class="anime-section">
             <div class="section-title anime-heading">Hybrid System</div>
-            <p class="anime-paragraph">I implemented a hybrid model that uses both content-based and collaborative filtering techniques.
-            Content-based and collaborative filtering are common methods for building recommender systems. However, both have drawbacks when 
-            used in isolation. My model attempts to mitigate these pitfalls by using both methods to generate recommendations.</p>
-        </div>
-        <div>
-            <div class="section-title anime-heading">Content-based Filtering</div>
-        </div>
-        <div>
-            <div class="section-title anime-heading">Collaborative Filtering</div>
-        </div>
+            <p class="large-paragraph">
+                I designed and implemented a hybrid model that uses both content-based and collaborative filtering techniques.
+                Content-based and collaborative filtering are common methods for building recommender systems. However, both have drawbacks when
+                used in isolation. My model attempts to mitigate these pitfalls by using both methods to generate more accurate recommendations.
+            </p>
 
-        <p>Data source can be found <a href="https://www.kaggle.com/datasets/azathoth42/myanimelist?select=anime_cleaned.csv">here</a></p>
-    </container>
+            <img class="animeimg" src="@Url.Content("/Content/Assets/anime-rec/infopage/flowchart.png")" />
+        </div>
+        <div class="processing-container">
+            <div class="title-paragraph">
+                <div class="section-title anime-heading">Pre-Processing</div>
+                <p class="small-paragraph">
+                    The pre-processing stage involved manipulating the original dataset to suit the needs of the project. I
+                    used Pandas dataframes to restructure the data so it was more useful for generating recommendations. This included
+                    creating extra <b>features</b> for the recommender engine and omitting any data that was not useful.
+                </p>
+            </div>
+            <div class="title-paragraph">
+                <div class="section-title anime-heading">Embedding</div>
+                <p class="small-paragraph">
+                    The pre-processing stage involved manipulating the original dataset to suit the needs of the project. I
+                    used Pandas dataframes to restructure the data so it was more useful for generating recommendations. This included
+                    creating extra <b>features</b> for the recommender engine and omitting any data that was not useful.
+                </p>
+
+            </div>
+        </div>
+            <p>Data source can be found <a href="https://www.kaggle.com/datasets/azathoth42/myanimelist?select=anime_cleaned.csv">here</a></p>
+</container>
 </body>
+
+<!--<p>
+    Tech Stack:The back-end
+    logic for the web appliation was developed using .NET and Entity Framework. While the front-end
+    was built using HTML/CSS and vanilla JavaScript.<br /> <br />
+    The recommendation engine was developed using Python libraries such as
+    Scikit-Learn, Pandas and Numpy.
+</p>-->

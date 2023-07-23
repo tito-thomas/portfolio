@@ -4,7 +4,7 @@
 
 body {
     visibility: hidden;
-    margin-top: 50px;
+    margin-top: 0;
     flex-direction: column;
     color: #4f4a4a;
     background-color: #040c1e;
@@ -13,8 +13,8 @@ body {
 
 /* Set padding to keep content from hitting the edges */
 .body-content {
-    padding-left: 15px;
-    padding-right: 15px;
+    /*padding-left: 15px;
+    padding-right: 15px;*/
     flex-direction: column;
     min-height: 100vh;
     max-width: 100vw;
@@ -126,11 +126,10 @@ p{
     color: #d9edf7;
 }
 
-.homenavbar{
-
-}
 .navbar-inverse {
-    background-color: rgb(3, 36, 86);
+/*    background-color: rgb(3, 36, 86);
+*/
+    background-color:transparent;
 }
 
 .navbar-inverse .navbar-nav > li > a {
@@ -315,7 +314,7 @@ p{
 
 .coverbg h4 {
     font-size: 130px;
-    font-family: 'Staatliches';
+    font-family: Staatliches;
 }
 
 .coverbg p {
@@ -441,7 +440,6 @@ p{
 .lang {
     opacity: 0;
     transform: translateX(-550%);
-    transition: 0.9s ease-in-out;
     width: 150px;
     text-align: center;
 }

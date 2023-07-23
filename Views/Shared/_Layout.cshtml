@@ -31,8 +31,8 @@
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#project1">Projects</a></li>
+                    <li class="only-home"><a href="#skills">Skills</a></li>
+                    <li class="only-home"><a href="#project1">Projects</a></li>
                     <li>
                         <a href="@Url.Action("CVDownload", "Home")" target="_blank">Download CV<i class='material-icons'>download</i></a>
                     </li>

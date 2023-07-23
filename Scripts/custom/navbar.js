@@ -1,5 +1,20 @@
 ﻿
-function homeNavStyling() {
+//wait for all page elements to load before displaying
+window.onload = function () {
+    const page = document.querySelector("body")
+    const content = document.querySelector(".body-content")
+    page.style.visibility = "visible";
+}
+
+function hideNavElements(){
+    const elementsToHide = document.querySelectorAll(".only-home");
+    var url = document.URL
+    if (!url.includes("Index")) {
+        elementsToHide.forEach(i => i.style.display = "none");
+    }
+}
+
+function navScrollStyling() {
     const navbar = document.querySelector("#mynav")
     navbar.style.transition = "0.4s"
     if (window.scrollY != 0) {
@@ -13,14 +28,7 @@ function homeNavStyling() {
     }
  }
 
-function checkHomePage() {
-    //no longer applying just on home page.
-    var url = document.URL.split('/');
-    const navbar = document.querySelector("#mynav");
-    document.body.style.marginTop = "0";
-    navbar.style.backgroundColor = "transparent";
-    window.addEventListener("scroll", homeNavStyling);
-}
+window.addEventListener("scroll", navScrollStyling);
 /*function checkHomePage() {
 
     var url = document.URL.split('/')
@@ -35,11 +43,4 @@ function checkHomePage() {
     
 }*/
 
-checkHomePage()
-
-//wait for all page elements to load before displaying
-window.onload = function () {
-    const page = document.querySelector("body")
-    const content = document.querySelector(".body-content")
-    page.style.visibility = "visible";
-}
+hideNavElements()

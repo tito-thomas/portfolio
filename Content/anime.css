@@ -7,6 +7,7 @@
 .anime-container {
     display: flex;
     flex-direction: column;
+    row-gap: 10rem;
 }
 
 
@@ -20,7 +21,7 @@
 }
 
 .anime-heading {
-    font-size: 100px !important;
+    font-size: 70px;
     font-family: 'Poppins';
     opacity: 90%;
     color: white;
@@ -48,14 +49,61 @@
 }
 
 .anime-section{
-
+    display:flex;
+    flex-direction:column;
+    z-index:10;
 }
-.anime-paragraph {
+.large-paragraph {
     width: 40%;
-    color: #ffffffd6;
+    color: #ffffff;
     font-size: 18px;
-    margin-top: 7rem;
+    margin-top: 5rem;
     margin-right: auto;
     margin-left: 58rem;
 }
 
+.animeimg{
+    margin:auto;
+
+}
+
+.processing-container {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    height: 500px;
+    margin-left: -15px;
+    margin-right: -15px;
+    column-gap: 10rem;
+}
+
+.filterimg {
+    position: absolute;
+    left: -1%;
+}
+
+.covercode {
+    height: 450px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    position: absolute;
+    top: 200%;
+    left: 0;
+    background: #03033300;
+    opacity: 12%;
+    z-index: -1;
+}
+
+.small-paragraph {
+    color: #ffffff;
+    font-size: 18px;
+    margin-top: 5rem;
+    width: 70%;
+    margin-left: 19rem;
+}
+
+.title-paragraph{
+    width:50%;
+}
