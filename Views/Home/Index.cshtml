@@ -40,7 +40,7 @@
     <div class="largerow" id="aboutme">
         <div class="bio">
             <div class="desc bioitem" id="biotext">
-                <h2><b>About me</b></h2>
+                <h2><span class="bold-text">About me</span></h2>
                 <br />
                 <p>
                     Computer Science graduate from Cardiff University. I am a hardworking, project and
@@ -60,23 +60,38 @@
         </div>
 
         <div class="skills" id="skills">
-            <div class="section-title skills-title">SKILLS</div>
+            <div class="section-title skills-title">TECHNICAL SKILLS</div>
 
             <div class="skills-container">
 
                 <div class="lang">
                     <img id="python" src="~/Content/Assets/icons/python.png" />
-                    <p>4 Years of Experience</p>
+                    @*<p>4 Years of Experience</p>*@
                 </div>
 
                 <div class="lang">
                     <img id="csharp" src="~/Content/Assets/icons/csharp.png" />
-                    <p>2 Years of Experience including 1 year in industry</p>
+                    @*<p>2 Years of Experience including 1 year in industry</p>*@
                 </div>
 
                 <div class="lang">
                     <img id="javascript" src="~/Content/Assets/icons/javascript.png" />
-                    <p>2 Years of Experience</p>
+                    @*<p>2 Years of Experience</p>*@
+                </div>
+
+                <div class="lang">
+                    <img id="java" src="~/Content/Assets/icons/java.png" />
+                    @*<p>2 Years of Experience</p>*@
+                </div>
+
+                <div class="lang">
+                    <img id="git" src="~/Content/Assets/icons/git.png" />
+                    @*<p>2 Years of Experience</p>*@
+                </div>
+
+                <div class="lang">
+                    <img id="sql" src="~/Content/Assets/icons/sql.png" />
+                    @*<p>2 Years of Experience</p>*@
                 </div>
 
             </div>
@@ -99,7 +114,7 @@
             </div>
             <img class="mac1" src="@Url.Content("/Content/Assets/mac.PNG")" />
             <div class="proj1-desc">
-                <h2><b>Anime Recommendation System</b></h2>
+                <h2><span class="bold-text">Anime Recommendation System</span></h2>
                 <br />
                 <p>
                     A project for my final year dissertation with the goal of recommending
@@ -119,14 +134,14 @@
         </div>
         <div class="proj2">
             <div class="proj2-desc">
-                <h2><b>Bitcoin Trading Simulator</b></h2>
+                <h2><span class="bold-text">Bitcoin Trading Simulator</span></h2>
                 <br />
                 <p>
                     Desktop application created for my A-Level Computing project. The app is a Bitcoin trading simulator
                     that allows users to learn to trade using virtual money. The interface provides similar functionality to
                     that of a real cryptocurrency exchange. However, it is intended as an educational tool.
                 </p><br />
-                <p><b>Technologies: Python | Tkinter | Matplotlib | SQL</b></p>
+                <p><span class="bold-text">Technologies: Python | Tkinter | Matplotlib | SQL</span></p>
 
                 <a href="@Url.Action("BitcoinProject","Home")" class="see-more">See more</a>
 

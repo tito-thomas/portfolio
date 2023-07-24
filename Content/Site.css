@@ -227,6 +227,7 @@ p{
 }
 
 
+
 .footericons {
     display: flex;
     flex-direction: row;
@@ -408,9 +409,8 @@ p{
 }
 
 .skills-title {
-    font-size: 350px;
-    opacity:0%;
-    color:white;
+    font-size: 200px;
+    color:#ffffff7a;
     transform:translateY(30rem);
     transition:0.9s ease-in-out;
     z-index:0;
@@ -427,15 +427,24 @@ p{
     display: grid;
     grid-template-columns: repeat(3,0.5fr);
     column-gap: 20rem;
+    row-gap:10rem;
     padding-left: 15rem;
     z-index: 1;
     overflow: hidden;
+
 }
 
 .skills-container img{
-    width:150px;
-    height:150px;
+    width: 200px;
+    height: 200px;
+    object-fit: scale-down;
 }
+
+#git {
+    width: 270px;
+    height: 130px;
+    margin-top: 4rem;
+} 
 
 .lang {
     opacity: 0;
@@ -590,4 +599,13 @@ p{
 .slider2 img {
     width: 880px;
     height: 600px;
+}
+
+p::selection, div::selection,
+.bold-text::selection, a::selection{
+    background: #7459ff;
+}
+
+.bold-text{
+    font-weight:bold;
 }
