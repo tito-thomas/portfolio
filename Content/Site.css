@@ -530,7 +530,7 @@ p{
     width: 14em;
     height: 4em;
     border-radius: 3em;
-    transition: 0.2s ease-in;
+    transition: 0.1s ease-in;
     text-decoration: none !important;
     font-size: 20px;
     margin-top: 3em;
@@ -539,8 +539,7 @@ p{
 .see-more:hover{
     color:white;
     transform:scale(1.02);
-    box-shadow: 6px 8px 8px rgb(10 10 10);
-
+    box-shadow: 1px 1px 8px 5px rgb(146 174 255);
 }
 
 .proj2 {

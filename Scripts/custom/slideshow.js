@@ -25,6 +25,8 @@ function carousel() {
 }
 setInterval(carousel, 2000)*/
 //let counter = 1;
+
+//Slides for home page
 class Slideshow { 
     constructor(slide, images) {
         this.slide = slide;
@@ -57,15 +59,45 @@ class Slideshow {
     }
 }
 
-//slide 1
-const slide = document.querySelector(".slider");
-const images = document.querySelectorAll(".slider img");
-const first_slide = new Slideshow(slide, images);
-setInterval(first_slide.carousel.bind(first_slide),2000);
+//Check if we are on home page
+//Run home page slideshows
+var url = document.URL.split('/')
+if (document.URL.includes("Index")) {
+    //slide 1
+    const slide = document.querySelector(".slider");
+    const images = document.querySelectorAll(".slider img");
+    const first_slide = new Slideshow(slide, images);
+    setInterval(first_slide.carousel.bind(first_slide), 2000);
 
-//slide 2
-const slide2 = document.querySelector(".slider2");
-const images2 = document.querySelectorAll(".slider2 img");
-const second_slide = new Slideshow(slide2, images2);
-setInterval(second_slide.carousel.bind(second_slide),2000);
+    //slide 2
+    const slide2 = document.querySelector(".slider2");
+    const images2 = document.querySelectorAll(".slider2 img");
+    const second_slide = new Slideshow(slide2, images2);
+    setInterval(second_slide.carousel.bind(second_slide), 2000);
+}
+
+//Run anime project page slideshow if not on home page 
+else {
+    //Slide for anime project page
+    const embedButton = document.querySelector(".embed");
+    embedButton.addEventListener("click", () => {
+        console.log("test");
+
+        const embedImages = document.querySelectorAll(".embedding-img");
+
+        if (embedButton.value == "text") {
+            embedImages.forEach((i) => {
+                i.style.transform = "translateX(-600px)",
+                    i.style.transition = "0.3s ease-in-out"
+            });
+            embedButton.innerHTML = "Text form";
+            embedButton.value = "embed";
+        }
+        else {
+            embedImages.forEach(i => i.style.transform = "translateX(0)");
+            embedButton.innerHTML = "Embed";
+            embedButton.value = "text";
+        }
+    });
+}
 

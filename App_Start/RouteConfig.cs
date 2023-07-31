@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
 
-namespace PersonalWebApp
+namespace Portfolio
 {
     public class RouteConfig
     {
@@ -15,7 +15,7 @@ namespace PersonalWebApp
 
            
             routes.MapRoute(
-                name: "test",
+                name: "CV",
                 url: $"home/CV Tito Thomas - {@DateTime.Now.Year}",
                 defaults: new { controller = "Home", action = "CVDownload"}
             );

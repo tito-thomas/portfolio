@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Optimization;
 
-namespace PersonalWebApp
+namespace Portfolio
 {
     public class BundleConfig
     {

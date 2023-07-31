@@ -17,6 +17,7 @@
             <p class="large-paragraph" style="text-align:center">For my final year dissertation, I designed and implemented 
             a recommendation system for anime TV shows and Movies. The software is catered towards those who are new to anime 
             to offer an easy way to get started with this genre of media entertainment.</p>
+            <img src="@Url.Content("/Content/Assets/anime-rec/infopage/result.PNG")" class="result" />
         </div>
 
         <div class="anime-section">
@@ -49,22 +50,36 @@
             <div class="title-paragraph">
                 <div class="section-title anime-heading">Pre-Processing</div>
                 <p class="small-paragraph">
-                    The pre-processing stage involved manipulating the original dataset to suit the needs of the project. I
+                    The <span class="bold-text">pre-processing</span> stage involved manipulating the original dataset to suit the needs of the project. I
                     used Pandas dataframes to restructure the data so it was more useful for generating recommendations. This included
-                    creating extra <span class="bold-text">features</span>for the recommender engine and omitting any data that was not useful.
-</p>
+                    creating extra <span class="bold-text">features</span> for the recommender engine and omitting any data that was not useful.
+                </p>
+                <img src="@Url.Content("/Content/Assets/anime-rec/infopage/feature.png")" class="prep-img" />
+
             </div>
             <div class="title-paragraph">
                 <div class="section-title anime-heading">Embedding</div>
                 <p class="small-paragraph">
-                    The pre-processing stage involved manipulating the original dataset to suit the needs of the project. I
-                    used Pandas dataframes to restructure the data so it was more useful for generating recommendations. This included
-                    creating extra <span class="bold-text">features</span> for the recommender engine and omitting any data that was not useful.
-</p>
+                    The next stage was <span class="bold-text">embedding</span> which refers to the vectorisation of our data. The goal
+                    here is to convert the text-based data into numerical form so that mathematical operations can be performed on it. This will
+                    mainly involve similarity calculations such as cosine similarity.
+                </p>
+                <div class="data-cover">
+                    <div class="data-container">
+                        <!--text data-->
+                        <img src="@Url.Content("/Content/Assets/anime-rec/infopage/original.png")" class="embedding-img" />
+                        <!--embedded dataset-->
+                        <img src="@Url.Content("/Content/Assets/anime-rec/infopage/embedded.png")" class="embedding-img" />
+                    </div>
+                </div>
+                <div class="embed-cont">
+                    <button class="embed" value="text">Embed</button>
+                </div>
+
 
             </div>
         </div>
-            <p>Data source can be found <a href="https://www.kaggle.com/datasets/azathoth42/myanimelist?select=anime_cleaned.csv">here</a></p>
+            <p>Data source can be found <a href="https://www.kaggle.com/datasets/azathoth42/myanimelist?select=anime_cleaned.csv" target="_blank">here</a></p>
 </container>
 </body>
 
