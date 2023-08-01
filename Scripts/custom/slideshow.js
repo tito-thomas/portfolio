@@ -95,7 +95,7 @@ else {
         }
         else {
             embedImages.forEach(i => i.style.transform = "translateX(0)");
-            embedButton.innerHTML = "Embed";
+            embedButton.innerHTML = "Embed data";
             embedButton.value = "text";
         }
     });

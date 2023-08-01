@@ -14,9 +14,11 @@
         </div>
         <div class="anime-section">
             <div class="section-title anime-heading">Overview</div>
-            <p class="large-paragraph" style="text-align:center">For my final year dissertation, I designed and implemented 
-            a recommendation system for anime TV shows and Movies. The software is catered towards those who are new to anime 
-            to offer an easy way to get started with this genre of media entertainment.</p>
+            <p class="large-paragraph" style="text-align:center">
+                For my final year dissertation, I designed and implemented
+                a recommendation system for anime TV shows and Movies. The software is catered towards those who are new to anime
+                to offer an easy way to get started with this genre of media entertainment.
+            </p>
             <img src="@Url.Content("/Content/Assets/anime-rec/infopage/result.PNG")" class="result" />
         </div>
 
@@ -24,10 +26,10 @@
             <div class="section-title anime-heading">System Architecture</div>
             <p class="large-paragraph">
                 Below is a system architecture diagram for the project at the component level. The system is built
-                using the Model-View-Controller acrchitecure whereby <span class="bold-text">models</span> serve as  blueprints for data access 
-                from a SQL Server database. <span class="bold-text">Views</span> represent the web pages that the user may interact with and these pages 
+                using the Model-View-Controller acrchitecure whereby <span class="bold-text">models</span> serve as  blueprints for data access
+                from a SQL Server database. <span class="bold-text">Views</span> represent the web pages that the user may interact with and these pages
                 rely on dynmaic data that is processed by the <span class="bold-text">controllers</span>.
-</p>
+            </p>
 
             <img class="animeimg" src="@Url.Content("/Content/Assets/anime-rec/infopage/architecture.png")" />
         </div>
@@ -47,9 +49,9 @@
             <img class="animeimg" src="@Url.Content("/Content/Assets/anime-rec/infopage/flowchart.png")" />
         </div>
         <div class="processing-container">
-            <div class="title-paragraph">
+            <div class="rec-stage">
                 <div class="section-title anime-heading">Pre-Processing</div>
-                <p class="small-paragraph">
+                <p class="small-paragraph pre-paragraph">
                     The <span class="bold-text">pre-processing</span> stage involved manipulating the original dataset to suit the needs of the project. I
                     used Pandas dataframes to restructure the data so it was more useful for generating recommendations. This included
                     creating extra <span class="bold-text">features</span> for the recommender engine and omitting any data that was not useful.
@@ -57,12 +59,13 @@
                 <img src="@Url.Content("/Content/Assets/anime-rec/infopage/feature.png")" class="prep-img" />
 
             </div>
-            <div class="title-paragraph">
+
+            <div class="rec-stage">
                 <div class="section-title anime-heading">Embedding</div>
-                <p class="small-paragraph">
+                <p class="small-paragraph embed-paragraph">
                     The next stage was <span class="bold-text">embedding</span> which refers to the vectorisation of our data. The goal
-                    here is to convert the text-based data into numerical form so that mathematical operations can be performed on it. This will
-                    mainly involve similarity calculations such as cosine similarity.
+                    here was to convert the text-based data into numerical form so that mathematical operations can be performed on it. Calculations
+                    such as cosine similarity were used to gauge how similar different data items were to each other.
                 </p>
                 <div class="data-cover">
                     <div class="data-container">
@@ -73,14 +76,30 @@
                     </div>
                 </div>
                 <div class="embed-cont">
-                    <button class="embed" value="text">Embed</button>
+                    <button class="embed" value="text">Embed data</button>
                 </div>
-
-
             </div>
+
         </div>
-            <p>Data source can be found <a href="https://www.kaggle.com/datasets/azathoth42/myanimelist?select=anime_cleaned.csv" target="_blank">here</a></p>
-</container>
+        <div class="rec-stage">
+            <div class="section-title anime-heading">Generate Recommendations</div>
+            <p class="small-paragraph gen-paragraph">
+                The final stage was to generate the anime recommendations based on similarity calculations using our vectorised data.
+                I chose the <span><a href="https://www.ibm.com/topics/knn" style="color:black" target="_blank">K-Nearest Neighbours Algorithm</a></span> in order to cluster similar groups of users and anime together.
+                I experimeneted with multiple distance metrics: Cosine and Euclidean distance.
+            </p>
+            <p class="small-paragraph2 gen-paragraph">
+                Finally, I carried out a comprehensive evaluation process to determine the optimal model distance metric and model design
+                for generating recommendations.
+            </p>
+            <p class="small-paragraph2 gen-paragraph">
+                Below is a code snippet from my project that shows the model being fit with data and the use of K-Nearest Neighbours to cluster
+                data points into groups of five based on similarity.
+            </p>
+            <img src="@Url.Content("/Content/Assets/anime-rec/infopage/neighbours.png")" class="embedding-img gen-img" />
+        </div>
+        <p>Data source can be found <a href="https://www.kaggle.com/datasets/azathoth42/myanimelist?select=anime_cleaned.csv" target="_blank">here</a></p>
+    </container>
 </body>
 
 <!--<p>
