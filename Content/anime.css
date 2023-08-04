@@ -25,7 +25,6 @@
     font-family: 'Poppins';
     opacity: 90%;
     color: white;
-    margin-top: 5rem;
 }
 
 .anime-cover {
@@ -59,7 +58,7 @@
     margin-top: 5rem;
     margin-bottom: 5rem;
     margin-right: auto;
-    margin-left: 58rem;
+    margin-left: auto;
 }
 
 .result {
@@ -130,7 +129,7 @@
 }
 
 .gen-img{
-    scale:0.68;
+    scale:0.6;
 }
 
 .rec-stage {
@@ -184,4 +183,77 @@
     color: white;
     transform: scale(1.02);
     box-shadow: 1px 1px 8px 2.5px rgb(146 174 255);
+}
+
+.eval-paragraph {
+    margin: auto;
+    margin-top: 5rem;
+    width: 45%;
+}
+
+.eval-img {
+    border-radius: 10px;
+    margin: auto;
+    padding-top: 5rem;
+    padding-bottom: 10rem;
+}
+
+.eval-code {
+    border-radius: 10px;
+    scale: 0.52;
+    box-shadow: 1px 1px 20px black;
+    margin-top: -14rem;
+}
+
+.front-end {
+    width: 100%;
+    transition:0.4s ease;
+}
+
+.gallery-cover {
+    height: 580px;
+    width: 1160px;
+    margin: auto;
+    margin-top: 10rem;
+}
+
+.gallery-container {
+    display: flex;
+    overflow: hidden;
+    column-gap: 10rem;
+    padding: 3rem;
+}
+
+.nav-buttons {
+    display: flex;
+    justify-content: center;
+    column-gap: 112rem;
+    transform: translateY(-35rem);
+
+}
+
+.next {
+    rotate: 270deg;
+    transition: 0.2s ease;
+
+}
+.next:hover{
+    transform:translateY(0.8rem);
+    cursor:pointer;
+}
+
+.back {
+    rotate: 90deg;
+    visibility: hidden;
+    transition: 0.2s ease;
+}
+
+.back:hover{
+    transform:translateY(0.8rem);
+    cursor:pointer;
+
+}
+
+.nav-button::selection, back::selection, next::selection {
+    color: rgba(255, 255, 255, 0.15);
 }

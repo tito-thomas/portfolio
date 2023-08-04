@@ -54,8 +54,7 @@ class Slideshow {
         }
         //this.counter++;
         //console.log(this.counter)
-            
-
+           
     }
 }
 
@@ -76,7 +75,8 @@ if (document.URL.includes("Index")) {
     setInterval(second_slide.carousel.bind(second_slide), 2000);
 }
 
-//Run anime project page slideshow if not on home page 
+//Run anime project page slideshow if not on home page
+//Embedding slideshow
 else {
     //Slide for anime project page
     const embedButton = document.querySelector(".embed");
@@ -99,5 +99,43 @@ else {
             embedButton.value = "text";
         }
     });
+    //Gallery Slideshow
+    //Move by 1200px
+    let my_counter = 0;
+    const gallery = document.querySelectorAll(".front-end");
+    const next = document.querySelector(".next");
+    const back = document.querySelector(".back");
+
+    next.addEventListener("click", () => {
+        if (my_counter != -4800) { 
+            my_counter -= 1200;
+            back.style.visibility = "visible";
+            gallery.forEach((i) => {
+                i.style.transform = "translateX(" + my_counter + "px)";
+                console.log(my_counter);
+
+            });
+        }
+        if (my_counter == -4800) {
+            next.style.visibility = "hidden";
+        }
+    });
+
+    back.addEventListener("click", () => {
+        next.style.visibility = "visible";
+        if (my_counter != 0) {
+            my_counter += 1200
+            gallery.forEach((i) => {
+                i.style.transform = "translateX(" + my_counter + "px)";
+                console.log(my_counter);
+            });
+        }
+        if (my_counter == 0) {
+            back.style.visibility = "hidden";
+        }
+        
+    })
+
 }
+
 

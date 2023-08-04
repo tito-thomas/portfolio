@@ -13,7 +13,7 @@
             <img src="@Url.Content("/Content/Assets/anime-rec/infopage/valley.jpg")" />
         </div>
         <div class="anime-section">
-            <div class="section-title anime-heading">Overview</div>
+            <div class="section-title anime-heading" style="margin-top:5rem">Overview</div>
             <p class="large-paragraph" style="text-align:center">
                 For my final year dissertation, I designed and implemented
                 a recommendation system for anime TV shows and Movies. The software is catered towards those who are new to anime
@@ -25,10 +25,11 @@
         <div class="anime-section">
             <div class="section-title anime-heading">System Architecture</div>
             <p class="large-paragraph">
-                Below is a system architecture diagram for the project at the component level. The system is built
-                using the Model-View-Controller acrchitecure whereby <span class="bold-text">models</span> serve as  blueprints for data access
-                from a SQL Server database. <span class="bold-text">Views</span> represent the web pages that the user may interact with and these pages
-                rely on dynmaic data that is processed by the <span class="bold-text">controllers</span>.
+                Below is a system architecture diagram for the project at the component level. The system was built
+                using the Model-View-Controller architecure. <span class="bold-text">Models</span> contain the back-end data logic and
+                with the use of Entity Framework, I was able to use these models to represent tables in my database and execute CRUD commands.
+                <span class="bold-text">Views</span> represent the front-end web pages that the user may interact with.  These pages
+                rely on dynmaic data from the models that is processed by the <span class="bold-text">controllers</span>.
             </p>
 
             <img class="animeimg" src="@Url.Content("/Content/Assets/anime-rec/infopage/architecture.png")" />
@@ -85,7 +86,7 @@
             <div class="section-title anime-heading">Generate Recommendations</div>
             <p class="small-paragraph gen-paragraph">
                 The final stage was to generate the anime recommendations based on similarity calculations using our vectorised data.
-                I chose the <span><a href="https://www.ibm.com/topics/knn" style="color:black" target="_blank">K-Nearest Neighbours Algorithm</a></span> in order to cluster similar groups of users and anime together.
+                I chose the <span><a href="https://www.ibm.com/topics/knn" style="color:#0089ff" target="_blank">K-Nearest Neighbours Algorithm</a></span> in order to cluster similar groups of users and anime together.
                 I experimeneted with multiple distance metrics: Cosine and Euclidean distance.
             </p>
             <p class="small-paragraph2 gen-paragraph">
@@ -98,7 +99,55 @@
             </p>
             <img src="@Url.Content("/Content/Assets/anime-rec/infopage/neighbours.png")" class="embedding-img gen-img" />
         </div>
-        <p>Data source can be found <a href="https://www.kaggle.com/datasets/azathoth42/myanimelist?select=anime_cleaned.csv" target="_blank">here</a></p>
+
+        <div class="anime-section">
+            <div class="section-title anime-heading">Performance Evaluation</div>
+            <p class="large-paragraph eval-paragraph">
+                In order to evaluate the performance of the model, I devised a custom formula to measure
+                performance. It involves analysing each anime recommendation and assigns points depending on how relevant each recommendation is
+                to the users. I compared the results between two distance metrics: Cosine Distance and Euclidean Distance. After reviewing the results,
+                I then revised the evaluation formula to address new-found limitations. Throughout this process, I learnt how important it is that
+                the evaluation techniques used are appropriate in order to properly gauge the performance of the system and make the correct
+                improvements to the model.
+            </p>
+            <p class="large-paragraph eval-paragraph">
+                The diagram below illustrates the logic behind the final evaluation formula that was used.
+            </p>
+            <img src="@Url.Content("/Content/Assets/anime-rec/infopage/eval_diagram.png")" class="eval-img" />
+
+            <p class="large-paragraph eval-paragraph">
+                The main rules for the evaluation model are shown implemented in the code below. The code shows how points are allocated for each
+                user's anime recommendations.
+            </p>
+            <img src="@Url.Content("/Content/Assets/anime-rec/infopage/eval_code.png")" class="eval-code" />
+        </div>
+
+        <div class="anime-section">
+            <div class="section-title anime-heading">Front-End Gallery</div>
+
+            <div class="gallery-cover">
+                <div class="gallery-container">
+                    <img src="@Url.Content("/Content/Assets/anime-rec/infopage/landing_page.png")" class="embedding-img front-end" id="first" />
+
+                    <img src="@Url.Content("/Content/Assets/anime-rec/infopage/questions.png")" class="embedding-img front-end" />
+
+                    <img src="@Url.Content("/Content/Assets/anime-rec/infopage/question1.png")" class="embedding-img front-end" />
+
+                    <img src="@Url.Content("/Content/Assets/anime-rec/infopage/question2.png")" class="embedding-img front-end" />
+
+                    <img src="@Url.Content("/Content/Assets/anime-rec/infopage/recs.png")" class="embedding-img front-end" id="last"/>
+                </div>
+                <div class="nav-buttons">
+                    <div class="nav-button back"><span class="material-symbols-outlined">expand_more</span></div>
+                    <div class="nav-button next"><span class="material-symbols-outlined">expand_more</span></div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+            <p>Data source can be found <a href="https://www.kaggle.com/datasets/azathoth42/myanimelist?select=anime_cleaned.csv" target="_blank">here</a></p>
     </container>
 </body>
 
