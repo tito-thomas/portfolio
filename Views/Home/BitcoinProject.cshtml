@@ -1,22 +1,63 @@
-﻿<head>
+﻿
 
-    @{
-        ViewBag.Title = "Javascript Chart Practice";
-    }
+@{
+    ViewBag.Title = "Bitcoin Trading Simulator";
+}
 
-    @section Scripts {
-        <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
-        <script type="module" src="~/Scripts/custom/Charts.js"></script>
-    }
-
-
+<head>
+    <title>@ViewBag.Title</title>
 </head>
 
-<body>
-    <center>
-        <h3>@ViewBag.Title.</h3>
-        <p>Sample page for charts.</p>
+<body class="btc-body">
+    <container class="bitcoin-container">
+        <div class="bitcoin-cover">
+            <div class="bitcoin-title">Bitcoin Trading Simulator</div>
+            <img src="@Url.Content("/Content/Assets/bitcoin-py/bitcoin-banner.jpg")" class="projectcover-img" />
 
-        <div id="mychart"></div>
-    </center>
-</body>
+            <div class="project-icon-container">
+                <a href="https://github.com/tito-thomas/bitcoin-python" target="_blank">
+                    <img class="project-giticon" src="@Url.Content("/Content/Assets/icons/github.png")" />
+                </a>
+            </div>
+
+        </div>
+
+        <div class="anime-section">
+            <div class="section-title anime-heading" style="margin-top:5rem">Overview</div>
+            <p class="large-paragraph" style="text-align:center">
+                A project for my A-Level Computing coursework. I built a desktop application with the purpose of teaching users
+                how to trade with cryptocurrency; specifically, Bitcoin. The platform allows users to buy and sell with a virtual 
+                balance allowing them to practice trading without risking their real funds.
+            </p>
+        </div>
+
+        <div class="anime-section">
+            <div class="section-title anime-heading">Tech Stack</div>
+            <p class="large-paragraph" style="text-align:center">
+                The project was completed entirely with Python as well as SQL for data storage.
+            </p>
+            <div class="btc-stack">
+                <div class="stack-cont" id="python">
+                    <img src="~/Content/Assets/icons/python.png" />
+                    <p><b>tkinter</b></p>
+                </div>
+
+                <div class="stack-cont" id="matplotlib">
+                    <img src="~/Content/Assets/icons/matplotlib.png" />
+                </div>
+
+
+                <div class="stack-cont">
+                    <img id="sql" src="~/Content/Assets/icons/mysql.png" />
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+    </container>
+</body> 
+
+                

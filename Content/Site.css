@@ -436,7 +436,7 @@ p{
 
 .skills-container img{
     width: 200px;
-    height: 200px;
+    height: 220px;
     object-fit: scale-down;
 }
 
@@ -468,6 +468,12 @@ p{
 }
 #csharp{
     scale:1.6;
+}
+
+.py {
+    overflow: hidden;
+    width: 200px;
+    height: 95%;
 }
 
 
@@ -607,4 +613,15 @@ p::selection, div::selection,
 
 .bold-text{
     font-weight:bold;
+}
+
+.projectcover-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 40%;
+    height: 50rem;
+    width: 100%;
+    height: 230%;
+    transform: translateY(-10rem);
 }

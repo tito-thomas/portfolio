@@ -127,6 +127,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\bitcoin.css" />
     <Content Include="Content\Assets\code2_blur.jpg" />
     <Content Include="Content\Assets\code3.jpg" />
     <Content Include="Content\Assets\keyboard.jpg" />

@@ -3,14 +3,21 @@
 }
 
 <head>
-
+    <title>@ViewBag.Title</title>
 </head>
 
 <body class="animebody">
     <container class="anime-container">
         <div class="anime-cover">
             <div class="anime-title">Anime Recommendation<br />System</div>
-            <img src="@Url.Content("/Content/Assets/anime-rec/infopage/valley.jpg")" />
+            <img src="@Url.Content("/Content/Assets/anime-rec/infopage/valley.jpg")" class="projectcover-img"/>
+
+
+            <div class="project-icon-container">
+                <a href="https://github.com/tito-thomas/anime-app" target="_blank">
+                    <img class="project-giticon" src="@Url.Content("/Content/Assets/icons/github.png")" />
+                </a>
+            </div>
         </div>
         <div class="anime-section">
             <div class="section-title anime-heading" style="margin-top:5rem">Overview</div>
@@ -26,21 +33,28 @@
             <div class="section-title anime-heading">Tech Stack</div>
 
             <div class="tech-stack">
+                <div class="stack-cont">
+                    <img id="csharp" src="~/Content/Assets/icons/csharp.png" />
+                </div>
 
                 <div class="stack-cont">
                     <img id="dotnet" src="~/Content/Assets/icons/dotnet.png" />
                 </div>
 
                 <div class="stack-cont">
-                    <img id="javascript" src="~/Content/Assets/icons/javascript.png"  style="padding-left:4rem"/>
+                    <img id="javascript" src="~/Content/Assets/icons/javascript.png" style="padding-left:4rem" />
                 </div>
 
                 <div class="stack-cont">
-                    <img id="python" src="~/Content/Assets/icons/python.png" />
+                    <img id="sql" src="~/Content/Assets/icons/SQLL.png" />
+                </div>
+
+                <div class="stack-cont" id="python">
+                    <img src="~/Content/Assets/icons/python.png" />
                 </div>
 
                 <div class="stack-cont">
-                    <img id="pandas" src="~/Content/Assets/icons/pandas.png"/>
+                    <img id="pandas" src="~/Content/Assets/icons/pandas.png" />
 
                 </div>
 
@@ -49,8 +63,8 @@
                 </div>
 
                 <div class="stack-cont">
-                    <img id="sql" src="~/Content/Assets/icons/SQLL.png" />
-  
+                    <img id="numpy" src="~/Content/Assets/icons/numpy.png" />
+
                 </div>
 
             </div>
@@ -59,7 +73,7 @@
 
         <div class="anime-section">
             <div class="section-title anime-heading">System Architecture</div>
-            <p class="large-paragraph">
+            <p class="large-paragraph arch-paragraph">
                 Below is a system architecture diagram for the project at the component level. The system was built
                 using the Model-View-Controller architecure. <span class="bold-text">Models</span> contain the back-end data logic and
                 with the use of Entity Framework, I was able to use these models to represent tables in my database and execute CRUD commands.

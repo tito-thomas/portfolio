@@ -1,0 +1,62 @@
+﻿
+
+.btc-body {
+    background:linear-gradient(#000000, #010125, #080808);
+
+}
+.bitcoin-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10rem;
+}
+
+.bitcoin-cover {
+    height: 55rem;
+    overflow: hidden;
+    position: relative;
+    margin-left: -23.5px;
+    margin-right: -23.5px;
+    text-align: center;
+}
+
+.bitcoin-title {
+    font-size: 140px;
+    width: 100%;
+    color: white;
+    font-family: Staatliches;
+    text-align: center;
+    transform: translateY(180px);
+}
+
+
+.btc-stack {
+    display: grid;
+    grid-template-columns: repeat(4,0.5fr);
+    row-gap: 10rem;
+    column-gap: 15rem;
+    z-index: 1;
+    overflow: hidden;
+    margin: auto;
+    padding-top: 5rem;
+    padding-bottom: 10rem;
+    padding-left: 20rem;
+}
+
+.btc-stack img {
+    width: 400px;
+    height: 170px;
+    object-fit: scale-down;
+}
+
+#python {
+    text-align: center;
+    color: white;
+    font-size: 38px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#matplotlib{
+    transform:translateY(4rem);
+}

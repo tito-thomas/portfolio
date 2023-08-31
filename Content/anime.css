@@ -36,20 +36,13 @@
     text-align:center
 }
 
-.anime-cover img{
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 40%;
-    height: 50rem;
-    width: 100%;
-    height: 230%;
-    transform: translateY(-10rem);
-}
-
 .anime-section{
     display:flex;
     flex-direction:column;
+}
+
+.arch-paragraph {
+    padding-left: 3rem;
 }
 .large-paragraph {
     width: 40%;
@@ -265,7 +258,7 @@
 
 .tech-stack {
     display: grid;
-    grid-template-columns: repeat(3,0.5fr);
+    grid-template-columns: repeat(4,0.5fr);
     row-gap: 10rem;
     column-gap: 10rem;
     z-index: 1;
@@ -282,6 +275,24 @@
     object-fit: scale-down;
 }
 
+
 .stack-cont{
     width:300px;
+}
+
+.project-icon-container {
+    z-index: 10;
+    position: absolute;
+    display: inline-block;
+    right: 0;
+    bottom: 0;
+    padding: 20px;
+}
+
+.project-giticon {
+    width: 80px;
+    transition: 0.2s ease-in;
+}
+.project-giticon:hover {
+    transform: scale(1.3);
 }
