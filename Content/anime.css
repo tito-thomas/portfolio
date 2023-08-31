@@ -141,6 +141,7 @@
 .embedding-img {
     border-radius: 10px;
     box-shadow: 1px 1px 20px black;
+    user-select: none;
 }
 
 .prep-img {
@@ -256,4 +257,31 @@
 
 .nav-button::selection, back::selection, next::selection {
     color: rgba(255, 255, 255, 0.15);
+}
+
+#last-section{
+    margin-top:-10rem;
+}
+
+.tech-stack {
+    display: grid;
+    grid-template-columns: repeat(3,0.5fr);
+    row-gap: 10rem;
+    column-gap: 10rem;
+    z-index: 1;
+    overflow: hidden;
+    margin: auto;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    padding-left: 10rem;
+}
+
+.tech-stack img {
+    width: 200px;
+    height: 120px;
+    object-fit: scale-down;
+}
+
+.stack-cont{
+    width:300px;
 }
