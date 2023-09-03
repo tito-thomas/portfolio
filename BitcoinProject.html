@@ -1,22 +1,34 @@
 ﻿
-
-@{
-    ViewBag.Title = "Bitcoin Trading Simulator";
-}
-
 <head>
-    <title>@ViewBag.Title</title>
+    <title>Bitcoin Trading Simulator</title>
+
+    <script>
+        fetch("navbar.html")
+        .then(response => response.text())
+        .then(html => {
+            document.getElementById("nav-placeholder").innerHTML = html;
+        });
+
+        fetch("footer.html")
+        .then(response => response.text())
+        .then(html => {
+            document.getElementById("footer-placeholder").innerHTML = html;
+        });
+        
+    </script>
+    <script type="module" src="/Scripts/custom/navbar.js"></script>
 </head>
 
 <body class="btc-body">
+    <div id="nav-placeholder"></div>
     <container class="bitcoin-container">
         <div class="bitcoin-cover">
             <div class="bitcoin-title">Bitcoin Trading Simulator</div>
-            <img src="@Url.Content("/Content/Assets/bitcoin-py/bitcoin-banner.jpg")" class="projectcover-img" />
+            <img src="https://ik.imagekit.io/contentcdn/Assets/bitcoin-py/bitcoin-banner.jpg" class="projectcover-img" />
 
             <div class="project-icon-container">
                 <a href="https://github.com/tito-thomas/bitcoin-python" target="_blank">
-                    <img class="project-giticon" src="@Url.Content("/Content/Assets/icons/github.png")" />
+                    <img class="project-giticon" src="https://ik.imagekit.io/contentcdn/Assets/icons/github.png" />
                 </a>
             </div>
 
@@ -41,24 +53,24 @@
             </p>
             <div class="btc-stack">
                 <div class="stack-cont" id="python">
-                    <img src="~/Content/Assets/icons/python.png" />
+                    <img src="https://ik.imagekit.io/contentcdn/Assets/icons/python.png" />
                     <p><b>tkinter</b></p>
                 </div>
 
                 <div class="stack-cont" id="matplotlib">
-                    <img src="~/Content/Assets/icons/matplotlib.png" />
+                    <img src="https://ik.imagekit.io/contentcdn/Assets/icons/matplotlib.png" />
                 </div>
 
 
                 <div class="stack-cont">
-                    <img id="sql" src="~/Content/Assets/icons/mysql.png" />
+                    <img id="sql" src="https://ik.imagekit.io/contentcdn/Assets/icons/mysql.png" />
                 </div>
 
             </div>
 
 
             <div class="btc-covercode">
-                <img class="btc-coverimg" src="@Url.Content("/Content/Assets/bitcoin-py/pythoncode.png")" />
+                <img class="btc-coverimg" src="https://ik.imagekit.io/contentcdn/Assets/bitcoin-py/pythoncode.png" />
             </div>
 
             <div class="section-title anime-heading">System Architecture</div>
@@ -67,24 +79,24 @@
                 Decomoposing the problem splits the project into several more manageable tasks. This was important for project
                 organisation, ensuring I met the deadline. This was also beneficial for my own understanding of the system.
             </p>
-            <img class="system" src="@Url.Content("/Content/Assets/bitcoin-py/system.png")" />
+            <img class="system" src="https://ik.imagekit.io/contentcdn/Assets/bitcoin-py/system.png" />
 
             <div class="section-title anime-heading">Screen Designs</div>
 
             <div class="design-cont">
-                <img class="design" src="@Url.Content("/Content/Assets/bitcoin-py/design3.png")" />
-                <img class="design" src="@Url.Content("/Content/Assets/bitcoin-py/design2.png")" />
-                <img class="design" src="@Url.Content("/Content/Assets/bitcoin-py/design1.png")" />
-                <img class="design" src="@Url.Content("/Content/Assets/bitcoin-py/design4.png")" />
+                <img class="design" src="https://ik.imagekit.io/contentcdn/Assets/bitcoin-py/design3.png" />
+                <img class="design" src="https://ik.imagekit.io/contentcdn/Assets/bitcoin-py/design2.png" />
+                <img class="design" src="https://ik.imagekit.io/contentcdn/Assets/bitcoin-py/design1.png" />
+                <img class="design" src="https://ik.imagekit.io/contentcdn/Assets/bitcoin-py/design4.png" />
             </div>
 
 
             <div class="section-title anime-heading" style="padding:10rem">Final Result</div>
             <div class="gui-cont">
-                <img class="gui" src="@Url.Content("/Content/Assets/bitcoin-py/register.png")" />
-                <img class="gui" src="@Url.Content("/Content/Assets/bitcoin-py/dash.png")" />
-                <img class="gui" src="@Url.Content("/Content/Assets/bitcoin-py/trade.png")" />
-                <img class="gui" src="@Url.Content("/Content/Assets/bitcoin-py/sell_prompt.png")" />
+                <img class="gui" src="https://ik.imagekit.io/contentcdn/Assets/bitcoin-py/register.PNG" />
+                <img class="gui" src="https://ik.imagekit.io/contentcdn/Assets/bitcoin-py/dash.PNG" />
+                <img class="gui" src="https://ik.imagekit.io/contentcdn/Assets/bitcoin-py/trade.PNG" />
+                <img class="gui" src="https://ik.imagekit.io/contentcdn/Assets/bitcoin-py/sell_prompt.PNG" />
 
             </div>
 
@@ -92,6 +104,7 @@
 
 
     </container>
+    <div id="footer-placeholder"></div>
 </body> 
 
                 

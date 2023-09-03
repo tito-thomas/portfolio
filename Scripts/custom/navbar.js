@@ -2,12 +2,19 @@
 //wait for all page elements to load before displaying
 window.onload = function () {
     const page = document.querySelector("body")
-    const content = document.querySelector(".body-content")
+    //const content = document.querySelector(".body-content")
     page.style.visibility = "visible";
+
+    const footer = document.querySelector(".year");
+    console.log(footer);
+    footer.innerHTML = new Date().getFullYear();
 }
+
+
 
 function hideNavElements(){
     const elementsToHide = document.querySelectorAll(".only-home");
+    console.log(elementsToHide);
     var url = document.URL
     if (!url.includes("Index")) {
         elementsToHide.forEach(i => i.style.display = "none");

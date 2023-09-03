@@ -1,14 +1,38 @@
-﻿@{
-    ViewBag.Title = "Home Test Page";
-}
-<head>
-    <title>@ViewBag.Title</title>
-    @section Scripts {
+﻿<!DOCTYPE html>
+<html>
 
-        <script type="module" src="~/Scripts/custom/animations.js"></script>
-    }
+
+<head>
+    <title>Home Test Page</title>
+
+    <link rel="stylesheet" href="/Content/Site.css" />
+    <!--<link rel="stylesheet" href="https://ik.imagekit.io/contentcdn/Content/Site.css" />-->
+    <!--<link rel="stylesheet" href="https://ik.imagekit.io/contentcdn/Content/bootstrap.min.css" />-->
+
+
+    <script type="module" src="/Scripts/custom/navbar.js"></script>
+    <script type="module" src="https://ik.imagekit.io/contentcdn/Scripts/custom/animations.js"></script>
+    <script type="module" src="/Scripts/custom/slideshow.js"></script>
+    
+ 
+    <script>
+        fetch("navbar.html")
+        .then(response => response.text())
+        .then(html => {
+            document.getElementById("nav-placeholder").innerHTML = html;
+        });
+
+        fetch("footer.html")
+        .then(response => response.text())
+        .then(html => {
+            document.getElementById("footer-placeholder").innerHTML = html;
+        });
+
+    </script>
+
 </head>
 
+<div id="nav-placeholder"></div>
 <container>
     <div class="row">
 
@@ -19,10 +43,10 @@
 
                 <div class="icons-container">
                     <a href="https://www.linkedin.com/in/titot/" target="_blank">
-                        <img class="linkedicon" src="@Url.Content("/Content/Assets/icons/linkedin.png")" />
+                        <img class="linkedicon" src="https://ik.imagekit.io/contentcdn/Assets/icons/linkedin.png?updatedAt=1693612861368" />
                     </a>
                     <a href="https://github.com/tito-thomas/" target="_blank">
-                        <img class="giticon" src="@Url.Content("/Content/Assets/icons/github.png")" />
+                        <img class="giticon" src="https://ik.imagekit.io/contentcdn/Assets/icons/github.png?updatedAt=1693612859686" />
                     </a>
                     <a href="mailto:titothomas@hotmail.co.uk">
                         <span class="emailicon material-symbols-outlined">mail</span>
@@ -30,7 +54,7 @@
                 </div>
             </div>
         </div>
-        <img class="coverimg" src="@Url.Content("/Content/Assets/fullview.jpg")" />
+        <img class="coverimg" src="https://ik.imagekit.io/contentcdn/Assets/fullview.jpg?updatedAt=1693612861865" />
         <div class="page-scroll">
             <a href="#aboutme"><span class="material-symbols-outlined">expand_more</span></a>
         </div>
@@ -50,7 +74,7 @@
                     Please see below to view my experience or browse my projects.
                 </p>
             </div>
-            <img class="selfie bioitem" id="selfie" src="@Url.Content("/Content/Assets/copy.jpg")" />
+            <img class="selfie bioitem" id="selfie" src="https://ik.imagekit.io/contentcdn/Assets/copy.jpg?updatedAt=1693612857065" />
 
 
 
@@ -65,33 +89,33 @@
             <div class="skills-container">
 
                 <div class="lang py">
-                    <img id="python" src="~/Content/Assets/icons/python.png" />
-                    @*<p>4 Years of Experience</p>*@
+                    <img id="python" src="https://ik.imagekit.io/contentcdn/Assets/icons/python.png?updatedAt=1693612863186" />
+
                 </div>
 
                 <div class="lang">
-                    <img id="csharp" src="~/Content/Assets/icons/csharp.png" />
-                    @*<p>2 Years of Experience including 1 year in industry</p>*@
+                    <img id="csharp" src="https://ik.imagekit.io/contentcdn/Assets/icons/csharp.png?updatedAt=1693612859003" />
+
                 </div>
 
                 <div class="lang">
-                    <img id="javascript" src="~/Content/Assets/icons/javascript.png" />
-                    @*<p>2 Years of Experience</p>*@
+                    <img id="javascript" src="https://ik.imagekit.io/contentcdn/Assets/icons/javascript.png?updatedAt=1693612861529" />
+
                 </div>
 
                 <div class="lang">
-                    <img id="java" src="~/Content/Assets/icons/java.png" />
-                    @*<p>2 Years of Experience</p>*@
+                    <img id="java" src="https://ik.imagekit.io/contentcdn/Assets/icons/java.png?updatedAt=1693612861266" />
+
                 </div>
 
                 <div class="lang">
-                    <img id="git" src="~/Content/Assets/icons/git.png" />
-                    @*<p>2 Years of Experience</p>*@
+                    <img id="git" src="https://ik.imagekit.io/contentcdn/Assets/icons/git.png?updatedAt=1693612859493" />
+
                 </div>
 
                 <div class="lang">
-                    <img id="sql" src="~/Content/Assets/icons/sql.png" />
-                    @*<p>2 Years of Experience</p>*@
+                    <img id="sql" src="https://ik.imagekit.io/contentcdn/Assets/icons/sql.png?updatedAt=1693612863543" />
+
                 </div>
 
             </div>
@@ -105,14 +129,14 @@
 
                 <div class="slide-container">
                     <div class="slider">
-                        <img src="@Url.Content("/Content/Assets/anime-rec/slideshow/welcome.png")" />
-                        <img src="@Url.Content("/Content/Assets/anime-rec/slideshow/questions.png")" />
-                        <img src="@Url.Content("/Content/Assets/anime-rec/slideshow/dash.png")" />
-                        <img id="first-clone" src="@Url.Content("/Content/Assets/anime-rec/slideshow/welcome.png")" />
+                        <img src="https://ik.imagekit.io/contentcdn/Assets/anime-rec/slideshow/welcome.png?updatedAt=1693612853361" /> 
+                        <img src="https://ik.imagekit.io/contentcdn/Assets/anime-rec/slideshow/questions.png?updatedAt=1693612855442" />
+                        <img src="https://ik.imagekit.io/contentcdn/Assets/anime-rec/slideshow/dash.png?updatedAt=1693612861230" />
+                        <img id="first-clone" src="https://ik.imagekit.io/contentcdn/Assets/anime-rec/slideshow/welcome.png?updatedAt=1693612853361" />
                     </div>
                 </div>
             </div>
-            <img class="mac1" src="@Url.Content("/Content/Assets/mac.PNG")" />
+            <img class="mac1" src="https://ik.imagekit.io/contentcdn/Assets/mac.png?updatedAt=1693612868397" />
             <div class="proj1-desc">
                 <h2><span class="bold-text">Anime Recommendation System</span></h2>
                 <br />
@@ -127,7 +151,7 @@
                 <p><span class="bold-text">C# ASP.NET Framework | SQL Server <br /></span></p>
 
 
-                <a href="@Url.Action("AnimeProject","Home")"  class="see-more">See more</a>
+                <a href="AnimeProject.html"  class="see-more">See more</a>
     
 
             </div>
@@ -143,23 +167,24 @@
                 </p><br />
                 <p><span class="bold-text">Technologies: Python | Tkinter | Matplotlib | SQL</span></p>
 
-                <a href="@Url.Action("BitcoinProject","Home")" class="see-more">See more</a>
+                <a href="BitcoinProject.html" class="see-more">See more</a>
 
             </div>
             <div class="slidecover2">
                 <div class="slide-container2">
                     <div class="slider2">
-                        <img src="@Url.Content("/Content/Assets/bitcoin-py/full_window.PNG")" />
-                        <img src="@Url.Content("/Content/Assets/bitcoin-py/dash.PNG")" />
-                        <img src="@Url.Content("/Content/Assets/bitcoin-py/full.PNG")" />
-                        <img id="first-clone" src="@Url.Content("/Content/Assets/bitcoin-py/full_window.PNG")" />
+                        <img src="https://ik.imagekit.io/contentcdn/Assets/bitcoin-py/full_window.PNG?updatedAt=1693612852072" /> 
+                        <img src="https://ik.imagekit.io/contentcdn/Assets/bitcoin-py/dash.PNG?updatedAt=1693612846870"/>
+                        <img src="https://ik.imagekit.io/contentcdn/Assets/bitcoin-py/full.PNG?updatedAt=1693612852438" />
+                        <img src="https://ik.imagekit.io/contentcdn/Assets/bitcoin-py/full_window.PNG?updatedAt=1693612852072" />
                     </div>
                 </div>
             </div>
 
-            <img class="mac2" src="@Url.Content("/Content/Assets/mac.PNG")" />
+            <img class="mac2" src="https://ik.imagekit.io/contentcdn/Assets/mac.png?updatedAt=1693612868397" />
         </div>
     </div>
 
-
 </container>
+<div id="footer-placeholder"></div>
+</html>

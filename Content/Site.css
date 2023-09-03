@@ -1,5 +1,6 @@
 ﻿html{
     scroll-behavior:smooth;
+    overflow-x:hidden;
 }
 
 body {
@@ -126,17 +127,25 @@ p{
     color: #d9edf7;
 }
 
+.container{
+    width:100%;
+}
+
+.nav > li {
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
 .navbar-inverse {
-/*    background-color: rgb(3, 36, 86);
-*/
-    background-color:transparent;
+    /*    background-color: rgb(3, 36, 86);
+    */
+    background-color: transparent;
+    border-color: transparent;
 }
 
 .navbar-inverse .navbar-nav > li > a {
     color: white;
     font-family: Poppins;
     font-size: 20px;
-
 }
 
 .navbar-inverse .navbar-nav > li:hover {
@@ -170,6 +179,7 @@ p{
     z-index: 10;
     flex-direction:column;
     padding:5%;
+
 }
 .footer-text {
     color: white;
@@ -512,7 +522,7 @@ p{
 .slider img {
     height: 88%;
     transform: translate(-20%, -15%);
-    width: 80%;
+    width: 961.1px;
 }
 
 .slide-container {
@@ -559,7 +569,7 @@ p{
 
 
 .proj2-desc {
-    width: 35%;
+    width: 34.3%;;
     font-size: 18px;
     margin-left: 100px;
     margin-top: 5%;

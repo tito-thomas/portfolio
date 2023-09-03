@@ -1,21 +1,40 @@
-﻿@{
-    ViewBag.Title = "Anime Recommendation System";
-}
-
+﻿<!DOCTYPE html>
+<html>
 <head>
-    <title>@ViewBag.Title</title>
+    <title>Anime Recommendation System</title>
+
+    
+    <script type="module" src="https://ik.imagekit.io/contentcdn/Scripts/custom/slideshow.js"></script>
+
+    <script>
+        fetch("navbar.html")
+        .then(response => response.text())
+        .then(html => {
+            document.getElementById("nav-placeholder").innerHTML = html;
+        });
+
+        fetch("footer.html")
+        .then(response => response.text())
+        .then(html => {
+            document.getElementById("footer-placeholder").innerHTML = html;
+        });
+
+    </script>
+    
+    <script type="module" src="/Scripts/custom/navbar.js"></script>
 </head>
 
 <body class="animebody">
+    <div id="nav-placeholder"></div>
     <container class="anime-container">
         <div class="anime-cover">
             <div class="anime-title">Anime Recommendation<br />System</div>
-            <img src="@Url.Content("/Content/Assets/anime-rec/infopage/valley.jpg")" class="projectcover-img"/>
+            <img src="https://ik.imagekit.io/contentcdn/Assets/anime-rec/infopage/valley.jpg" class="projectcover-img"/>
 
 
             <div class="project-icon-container">
                 <a href="https://github.com/tito-thomas/anime-app" target="_blank">
-                    <img class="project-giticon" src="@Url.Content("/Content/Assets/icons/github.png")" />
+                    <img class="project-giticon" src="https://ik.imagekit.io/contentcdn/Assets/icons/github.png" />
                 </a>
             </div>
         </div>
@@ -26,7 +45,7 @@
                 a recommendation system for anime TV shows and Movies. The software is catered towards those who are new to anime
                 to offer an easy way to get started with this genre of media entertainment.
             </p>
-            <img src="@Url.Content("/Content/Assets/anime-rec/infopage/result.PNG")" class="result" />
+            <img src="https://ik.imagekit.io/contentcdn/Assets/anime-rec/infopage/result.PNG" class="result" />
         </div>
 
         <div class="anime-section">
@@ -34,36 +53,36 @@
 
             <div class="tech-stack">
                 <div class="stack-cont">
-                    <img id="csharp" src="~/Content/Assets/icons/csharp.png" />
+                    <img id="csharp" src="https://ik.imagekit.io/contentcdn/Assets/icons/csharp.png" />
                 </div>
 
                 <div class="stack-cont">
-                    <img id="dotnet" src="~/Content/Assets/icons/dotnet.png" />
+                    <img id="dotnet" src="https://ik.imagekit.io/contentcdn/Assets/icons/dotnet.png" />
                 </div>
 
                 <div class="stack-cont">
-                    <img id="javascript" src="~/Content/Assets/icons/javascript.png" style="padding-left:4rem" />
+                    <img id="javascript" src="https://ik.imagekit.io/contentcdn/Assets/icons/javascript.png" style="padding-left:4rem" />
                 </div>
 
                 <div class="stack-cont">
-                    <img id="sql" src="~/Content/Assets/icons/SQLL.png" />
+                    <img id="sql" src="https://ik.imagekit.io/contentcdn/Assets/icons/SQLL.png" />
                 </div>
 
                 <div class="stack-cont" id="python">
-                    <img src="~/Content/Assets/icons/python.png" />
+                    <img src="https://ik.imagekit.io/contentcdn/Assets/icons/python.png" />
                 </div>
 
                 <div class="stack-cont">
-                    <img id="pandas" src="~/Content/Assets/icons/pandas.png" />
+                    <img id="pandas" src="https://ik.imagekit.io/contentcdn/Assets/icons/pandas.png" />
 
                 </div>
 
                 <div class="stack-cont">
-                    <img id="scitkit" src="~/Content/Assets/icons/scikitlearn.png" />
+                    <img id="scitkit" src="https://ik.imagekit.io/contentcdn/Assets/icons/scikitlearn.png" />
                 </div>
 
                 <div class="stack-cont">
-                    <img id="numpy" src="~/Content/Assets/icons/numpy.png" />
+                    <img id="numpy" src="https://ik.imagekit.io/contentcdn/Assets/icons/numpy.png" />
 
                 </div>
 
@@ -81,11 +100,11 @@
                 rely on dynmaic data from the models that is processed by the <span class="bold-text">controllers</span>.
             </p>
 
-            <img class="animeimg" src="@Url.Content("/Content/Assets/anime-rec/infopage/architecture.png")" />
+            <img class="animeimg" src="https://ik.imagekit.io/contentcdn/Assets/anime-rec/infopage/architecture.png" />
         </div>
 
         <div class="covercode">
-            <img class="animeimg filterimg" src="@Url.Content("/Content/Assets/anime-rec/infopage/collab.png")" />
+            <img class="animeimg filterimg" src="https://ik.imagekit.io/contentcdn/Assets/anime-rec/infopage/collab.png" />
         </div>
 
         <div class="anime-section">
@@ -96,7 +115,7 @@
                 used in isolation. My model attempts to mitigate these pitfalls by using both methods to generate more accurate recommendations.
             </p>
 
-            <img class="animeimg" src="@Url.Content("/Content/Assets/anime-rec/infopage/flowchart.png")" />
+            <img class="animeimg" src="https://ik.imagekit.io/contentcdn/Assets/anime-rec/infopage/flowchart.png" />
         </div>
         <div class="processing-container">
             <div class="rec-stage">
@@ -106,7 +125,7 @@
                     used Pandas dataframes to restructure the data so it was more useful for generating recommendations. This included
                     creating extra <span class="bold-text">features</span> for the recommender engine and omitting any data that was not useful.
                 </p>
-                <img src="@Url.Content("/Content/Assets/anime-rec/infopage/feature.png")" class="prep-img" />
+                <img src="https://ik.imagekit.io/contentcdn/Assets/anime-rec/infopage/feature.PNG?updatedAt=1693612830493" class="prep-img" />
 
             </div>
 
@@ -120,9 +139,9 @@
                 <div class="data-cover">
                     <div class="data-container">
                         <!--text data-->
-                        <img src="@Url.Content("/Content/Assets/anime-rec/infopage/original.png")" class="embedding-img" />
+                        <img src="https://ik.imagekit.io/contentcdn/Assets/anime-rec/infopage/original.PNG" class="embedding-img" />
                         <!--embedded dataset-->
-                        <img src="@Url.Content("/Content/Assets/anime-rec/infopage/embedded.png")" class="embedding-img" />
+                        <img src="https://ik.imagekit.io/contentcdn/Assets/anime-rec/infopage/embedded.PNG" class="embedding-img" />
                     </div>
                 </div>
                 <div class="embed-cont">
@@ -146,7 +165,7 @@
                 Below is a code snippet from my project that shows the model being fit with data and the use of K-Nearest Neighbours to cluster
                 data points into groups of five based on similarity.
             </p>
-            <img src="@Url.Content("/Content/Assets/anime-rec/infopage/neighbours.png")" class="embedding-img gen-img" />
+            <img src="https://ik.imagekit.io/contentcdn/Assets/anime-rec/infopage/neighbours.png" class="embedding-img gen-img" />
             <p class="data">*Data source can be found <a href="https://www.kaggle.com/datasets/azathoth42/myanimelist?select=anime_cleaned.csv" target="_blank">here</a></p>
 
         </div>
@@ -164,13 +183,13 @@
             <p class="large-paragraph eval-paragraph">
                 The diagram below illustrates the logic behind the final evaluation formula that was used.
             </p>
-            <img src="@Url.Content("/Content/Assets/anime-rec/infopage/eval_diagram.png")" class="eval-img" />
+            <img src="https://ik.imagekit.io/contentcdn/Assets/anime-rec/infopage/eval_diagram.png?updatedAt=1693612826361" class="eval-img" />
 
             <p class="large-paragraph eval-paragraph">
                 The main rules for the evaluation model are shown implemented in the code below. The code shows how points are allocated for each
                 user's anime recommendations.
             </p>
-            <img src="@Url.Content("/Content/Assets/anime-rec/infopage/eval_code.png")" class="eval-code" />
+            <img src="https://ik.imagekit.io/contentcdn/Assets/anime-rec/infopage/eval_code.png?updatedAt=1693612828438" class="eval-code" />
         </div>
 
         <div class="anime-section" id="last-section">
@@ -178,15 +197,15 @@
 
             <div class="gallery-cover">
                 <div class="gallery-container">
-                    <img src="@Url.Content("/Content/Assets/anime-rec/infopage/landing_page.png")" class="embedding-img front-end" id="first" />
+                    <img src="https://ik.imagekit.io/contentcdn/Assets/anime-rec/infopage/landing_page.PNG" class="embedding-img front-end" id="first" />
 
-                    <img src="@Url.Content("/Content/Assets/anime-rec/infopage/questions.png")" class="embedding-img front-end" />
+                    <img src="https://ik.imagekit.io/contentcdn/Assets/anime-rec/infopage/questions.png" class="embedding-img front-end"/>
 
-                    <img src="@Url.Content("/Content/Assets/anime-rec/infopage/question1.png")" class="embedding-img front-end" />
+                    <img src="https://ik.imagekit.io/contentcdn/Assets/anime-rec/infopage/question1.PNG" class="embedding-img front-end" />
 
-                    <img src="@Url.Content("/Content/Assets/anime-rec/infopage/question2.png")" class="embedding-img front-end" />
+                    <img src="https://ik.imagekit.io/contentcdn/Assets/anime-rec/infopage/question2.PNG" class="embedding-img front-end" />
 
-                    <img src="@Url.Content("/Content/Assets/anime-rec/infopage/recs.png")" class="embedding-img front-end" id="last" />
+                    <img src="https://ik.imagekit.io/contentcdn/Assets/anime-rec/infopage/recs.PNG" class="embedding-img front-end" id="last" />
                 </div>
                 <div class="nav-buttons">
                     <div class="nav-button back" style="user-select:none"><span class="material-symbols-outlined">expand_more</span></div>
@@ -199,12 +218,6 @@
         </div>
 
     </container>
+    <div id="footer-placeholder"></div>
 </body>
-
-<!--<p>
-    Tech Stack:The back-end
-    logic for the web appliation was developed using .NET and Entity Framework. While the front-end
-    was built using HTML/CSS and vanilla JavaScript.<br /> <br />
-    The recommendation engine was developed using Python libraries such as
-    Scikit-Learn, Pandas and Numpy.
-</p>-->
+</html>
