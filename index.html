@@ -16,13 +16,13 @@
     
  
     <script>
-        fetch("navbar.html")
+        fetch("Views/Shared/navbar.html")
         .then(response => response.text())
         .then(html => {
             document.getElementById("nav-placeholder").innerHTML = html;
         });
 
-        fetch("footer.html")
+        fetch("Views/Shared/footer.html")
         .then(response => response.text())
         .then(html => {
             document.getElementById("footer-placeholder").innerHTML = html;
@@ -151,7 +151,7 @@
                 <p><span class="bold-text">C# ASP.NET Framework | SQL Server <br /></span></p>
 
 
-                <a href="AnimeProject.html"  class="see-more">See more</a>
+                <a href="Views/Home/AnimeProject.html"  class="see-more">See more</a>
     
 
             </div>
@@ -167,7 +167,7 @@
                 </p><br />
                 <p><span class="bold-text">Technologies: Python | Tkinter | Matplotlib | SQL</span></p>
 
-                <a href="BitcoinProject.html" class="see-more">See more</a>
+                <a href="Views/Home/BitcoinProject.html" class="see-more">See more</a>
 
             </div>
             <div class="slidecover2">

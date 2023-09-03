@@ -7,13 +7,13 @@
     <script type="module" src="https://ik.imagekit.io/contentcdn/Scripts/custom/slideshow.js"></script>
 
     <script>
-        fetch("navbar.html")
+        fetch("../Shared/navbar.html")
         .then(response => response.text())
         .then(html => {
             document.getElementById("nav-placeholder").innerHTML = html;
         });
 
-        fetch("footer.html")
+        fetch("../Shared/footer.html")
         .then(response => response.text())
         .then(html => {
             document.getElementById("footer-placeholder").innerHTML = html;
