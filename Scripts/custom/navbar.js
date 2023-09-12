@@ -4,22 +4,25 @@ window.onload = function () {
     const page = document.querySelector("body")
     //const content = document.querySelector(".body-content")
     page.style.visibility = "visible";
+};
 
+setTimeout(function () {
     const footer = document.querySelector(".year");
     console.log(footer);
     footer.innerHTML = new Date().getFullYear();
-}
+},100);
 
 
 
-function hideNavElements(){
+setTimeout(function() {
     const elementsToHide = document.querySelectorAll(".only-home");
     console.log(elementsToHide);
-    var url = document.URL
-    if (!url.includes("Index")) {
+    var url = document.URL.split("/");
+    //if we are not on home page
+    if (url.length > 4) {
         elementsToHide.forEach(i => i.style.display = "none");
     }
-}
+},100);
 
 function navScrollStyling() {
     const navbar = document.querySelector("#mynav")
@@ -36,6 +39,7 @@ function navScrollStyling() {
  }
 
 window.addEventListener("scroll", navScrollStyling);
+document.addEventListener("DOMContentLoaded", hideNavElements); 
 /*function checkHomePage() {
 
     var url = document.URL.split('/')
@@ -50,4 +54,3 @@ window.addEventListener("scroll", navScrollStyling);
     
 }*/
 
-hideNavElements()

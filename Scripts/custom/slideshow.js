@@ -25,7 +25,7 @@ function carousel() {
 }
 setInterval(carousel, 2000)*/
 //let counter = 1;
-console.log("is this working")
+
 //Slides for home page
 class Slideshow { 
     constructor(slide, images) {
@@ -61,7 +61,7 @@ class Slideshow {
 //Check if we are on home page
 //Run home page slideshows
 var url = document.URL.split('/')
-if (document.URL.includes("index.html")) {
+if (Array.from(url).includes("index.html") || url.length <=4) {
     //slide 1
     const slide = document.querySelector(".slider");
     const images = document.querySelectorAll(".slider img");
