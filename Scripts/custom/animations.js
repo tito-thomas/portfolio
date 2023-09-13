@@ -3,12 +3,13 @@
 //About me animation
 
 const tracker = new IntersectionObserver((entries) => {
+
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
             entry.target.style.transition = "transform 0.5s";
             entry.target.style.transform = "translateX(0)";
-
         }
+        //send content back after scrolling
         else if(entry.target.id==="biotext"){
             entry.target.style.transform = "translateX(-100%)";
         }
