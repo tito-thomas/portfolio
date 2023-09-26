@@ -664,7 +664,7 @@ p{
 
 @media(max-width:576px){
     .slidecover {
-        transform: translate(4rem,3rem);
+        transform: translate(3.5rem,3rem);
         scale: 0.9;    
     }      
 }
@@ -783,8 +783,7 @@ p{
 @media(max-width:576px){
     .slidecover2{
         scale: 0.48;
-        transform: translate(-34.4rem,104rem);
-    }
+        transform: translate(-34.6rem,104rem);    }
 }
 
 .slide-container2 {
@@ -793,11 +792,7 @@ p{
     transform: translate(0%,0%);
     overflow:hidden;
 }
-@media(max-width:576px){
-    .slide-container2{
-        
-    }
-}
+
 
 .slider2 img {
     transform: translate(-12%, -12%);
