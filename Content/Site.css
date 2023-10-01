@@ -826,6 +826,14 @@ p::selection, div::selection,
     transform: translateY(-10rem);
 }
 
+@media (max-width:576px){
+    .projectcover-img{
+        transform: translateX(-7rem);
+        height: 50rem;
+        width: 80rem;
+    }
+    
+}
 
 
 @media (max-width:768){
