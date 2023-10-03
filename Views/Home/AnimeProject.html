@@ -104,9 +104,13 @@
             <div class="section-title anime-heading sys">System Architecture</div>
             <p class="large-paragraph arch-paragraph sys-paragraph">
                 Below is a system architecture diagram for the project at the component level. The system was built
-                using the Model-View-Controller architecure. <span class="bold-text">Models</span> contain the back-end data logic and
+                using the Model-View-Controller architecure.
+            </p><br>
+            <p class="large-paragraph arch-paragraph sys-paragraph"><span class="bold-text">Models</span> contain the back-end data logic and
                 with the use of Entity Framework, I was able to use these models to represent tables in my database and execute CRUD commands.
-                <span class="bold-text">Views</span> represent the front-end web pages that the user may interact with.  These pages
+                <span class="bold-text">
+            </p><br>
+            <p class="large-paragraph arch-paragraph sys-paragraph">Views</span> represent the front-end web pages that the user may interact with.  These pages
                 rely on dynmaic data from the models that is processed by the <span class="bold-text">controllers</span>.
             </p>
 
@@ -121,56 +125,58 @@
             <div class="section-title anime-heading hybrid">Hybrid System</div>
             <p class="large-paragraph hybrid-paragraph">
                 I designed and implemented a hybrid model that uses both content-based and collaborative filtering techniques.
-                Content-based and collaborative filtering are common methods for building recommender systems. However, both have drawbacks when
-                used in isolation. My model attempts to mitigate these pitfalls by using both methods to generate more accurate recommendations.
+                Content-based and collaborative filtering are common methods for building recommender systems. 
+            </p><br>
+            <p class="large-paragraph hybrid-paragraph">However, both have drawbacks when used in isolation. My model attempts to mitigate these pitfalls by 
+                using both methods to generate more accurate recommendations.
             </p>
 
             <img class="animeimg hybrid-img" src="https://ik.imagekit.io/contentcdn/Assets/anime-rec/infopage/flowchart.png" />
         </div>
         <div class="processing-container">
             <div class="rec-stage">
-                <div class="section-title anime-heading">Pre-Processing</div>
-                <p class="small-paragraph pre-paragraph">
+                <div class="section-title anime-heading preprocessing-title">Pre-Processing</div>
+                <p class="small-paragraph pre-paragraph mobilecode">
                     The <span class="bold-text">pre-processing</span> stage involved manipulating the original dataset to suit the needs of the project. I
                     used Pandas dataframes to restructure the data so it was more useful for generating recommendations. This included
                     creating extra <span class="bold-text">features</span> for the recommender engine and omitting any data that was not useful.
                 </p>
-                <img src="https://ik.imagekit.io/contentcdn/Assets/anime-rec/infopage/feature.PNG?updatedAt=1693612830493" class="prep-img" />
+                <img class="prep-img animecode-img" src="https://ik.imagekit.io/contentcdn/Assets/anime-rec/infopage/feature.PNG?updatedAt=1693612830493"/>
 
             </div>
 
-            <div class="rec-stage">
+            <div class="rec-stage embedding">
                 <div class="section-title anime-heading">Embedding</div>
-                <p class="small-paragraph embed-paragraph">
+                <p class="small-paragraph embed-paragraph mobilecode">
                     The next stage was <span class="bold-text">embedding</span> which refers to the vectorisation of our data. The goal
                     here was to convert the text-based data into numerical form so that mathematical operations can be performed on it. Calculations
                     such as cosine similarity were used to gauge how similar different data items were to each other.
                 </p>
-                <div class="data-cover">
+                <div class="data-cover" style="transform: translate(1rem,-10rem)">
                     <div class="data-container">
                         <!--text data-->
-                        <img src="https://ik.imagekit.io/contentcdn/Assets/anime-rec/infopage/original.PNG" class="embedding-img" />
+                        <img  class="embedding-img animecode-img " src="https://ik.imagekit.io/contentcdn/Assets/anime-rec/infopage/original.PNG" />
                         <!--embedded dataset-->
-                        <img src="https://ik.imagekit.io/contentcdn/Assets/anime-rec/infopage/embedded.PNG" class="embedding-img" />
+                        <img  class="embedding-img animecode-img " src="https://ik.imagekit.io/contentcdn/Assets/anime-rec/infopage/embedded.PNG" />
                     </div>
                 </div>
-                <div class="embed-cont">
+                <div class="embed-cont ">
                     <button class="embed" value="text">Embed data</button>
                 </div>
             </div>
 
         </div>
-        <div class="rec-stage">
-            <div class="section-title anime-heading">Generate Recommendations</div>
+        <div class="rec-stage gen-rec">
+            <div class="section-title anime-heading rec-title">Generate Recommendations</div>
             <p class="small-paragraph gen-paragraph">
                 The final stage was to generate the anime recommendations based on similarity calculations using our vectorised data.
                 I chose the <span><a href="https://www.ibm.com/topics/knn" style="color:#0089ff" target="_blank">K-Nearest Neighbours Algorithm</a></span> in order to cluster similar groups of users and anime together.
                 I experimeneted with multiple distance metrics: Cosine and Euclidean distance.
-            </p>
+            </p><br>
             <p class="small-paragraph2 gen-paragraph">
                 Finally, I carried out a comprehensive evaluation process to determine the optimal model distance metric and model design
                 for generating recommendations.
-            </p>
+            </p><br>
             <p class="small-paragraph2 gen-paragraph">
                 Below is a code snippet from my project that shows the model being fit with data and the use of K-Nearest Neighbours to cluster
                 data points into groups of five based on similarity.
