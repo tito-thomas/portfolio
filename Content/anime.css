@@ -582,7 +582,9 @@
     }
 }
 
-.perf-title{
-    transform: translate(-5rem,-140rem);
-    font-size:45px;
+@media(max-width:576px){
+    .perf-title{
+        transform: translate(-5rem,-140rem);
+        font-size:45px;
+    }
 }

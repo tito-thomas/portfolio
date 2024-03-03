@@ -1,27 +1,13 @@
 ﻿
 //wait for all page elements to load before displaying
-window.onload = function () { 
+document.addEventListener("DOMContentLoaded", function() { 
     const page = document.querySelector("body")
-    //const content = document.querySelector(".body-content")
+const content = document.querySelector(".body-content")
     page.style.visibility = "visible";
-    footerDate();
-};
+});
 
 
-// setTimeout(function () {
-//     const footer = document.querySelector(".year");
-//     console.log(footer);
-//     footer.innerHTML = new Date().getFullYear();
-// },100);
-
-function footerDate() {
-    const footer = document.querySelector(".year");
-    console.log(footer);
-    footer.innerHTML = new Date().getFullYear();
-};
-
-
-setTimeout(function() {
+function hideNavElements() {
     const elementsToHide = document.querySelectorAll(".only-home");
     console.log(elementsToHide);
     var url = document.URL.split("/");
@@ -29,7 +15,7 @@ setTimeout(function() {
     if (url.length > 4) {
         elementsToHide.forEach(i => i.style.display = "none");
     }
-},100);
+};
 
 function navScrollStyling() {
     const navbar = document.querySelector("#mynav")
@@ -47,7 +33,6 @@ function navScrollStyling() {
 
 //document.addEventListener("DOMContentLoaded", footerDate); 
 window.addEventListener("scroll", navScrollStyling);
-document.addEventListener("DOMContentLoaded", hideNavElements); 
 /*function checkHomePage() {
 
     var url = document.URL.split('/')

@@ -92,6 +92,13 @@ p{
         transform: translateY(-30rem);           
     }
 }
+
+@media (max-width:1600px){
+    .bio{
+        scale:0.8;   
+        transform: translateY(-15rem);      
+    } 
+}
 .selfie {
     width: 600px;
     height: 500px;
@@ -477,7 +484,11 @@ p{
     column-gap: 6%;
     transform: translateY(25em);
 }
-
+@media(max-width:1600px){
+    .proj1 {
+        scale: 0.8;
+    }      
+}
 
 @media(max-width:576px){
     .proj1 {
@@ -554,6 +565,11 @@ p{
     transition:0.9s ease-in-out;
     z-index:0;
 }
+@media(max-width:1600px){
+    .skills-title{
+        font-size: 150px;
+    }
+}
 
 @media(max-width:576px){
     .skills-title{
@@ -582,6 +598,12 @@ p{
     z-index: 1;
     overflow: hidden;
 
+}
+@media(max-width:1600px){
+    .skills-container{
+        scale: 0.7;
+        transform: translateY(-20rem);
+    }
 }
 
 @media(max-width:576px){
@@ -720,7 +742,11 @@ p{
     column-gap: 8%;
 }
 
-
+@media(max-width:1600px){
+    .proj2 {
+       column-gap:0;
+    }      
+}
 @media(max-width:576px){
     .proj2 {
         flex-direction: column;
@@ -735,6 +761,12 @@ p{
     margin-top: 5%;
 }
 
+@media(max-width:1600px){
+    .proj2-desc{
+        scale: 0.8;
+
+    }      
+}
 @media(max-width:576px){
     .proj2-desc{
         width: 100%;
@@ -755,10 +787,32 @@ p{
     width: 920px;
     margin-top: 2%;
 }
+@media(max-width:1600px){
+    .proj2 .mac2{
+        scale: 0.75;
+        transform: translateY(2rem);
+
+    }      
+}
+
 @media (max-width:576px){
     .proj2 img {
     scale: 0.43;
+    transform: translate(-65rem,-61rem);
+    }
+}
+
+@media (max-width:400px){
+    .proj2 img {
+    scale: 0.43;
     transform: translate(-70rem,-61rem);
+    }
+}
+
+@media (max-width:360px){
+    .proj2 img {
+        scale: 0.35;
+        transform: translate(-90rem, -80rem);
     }
 }
 
@@ -779,11 +833,28 @@ p{
     border-top-right-radius: 2%;
     border-top-left-radius: 2%;
 }
+@media(max-width:1600px){
+    .slidecover2{
+        transform: translate(80rem, 15rem);
+        scale: 0.83;   }
+}
 
 @media(max-width:576px){
     .slidecover2{
         scale: 0.48;
+        transform: translate(-30.6rem,99rem);    }
+}
+
+@media(max-width:400px){
+    .slidecover2{
+        scale: 0.48;
         transform: translate(-34.6rem,104rem);    }
+}
+
+@media(max-width:360px){
+    .slidecover2{
+        scale: 0.39;
+        transform: translate(-46rem, 130rem);    }
 }
 
 .slide-container2 {

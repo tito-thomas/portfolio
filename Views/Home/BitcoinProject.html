@@ -22,16 +22,18 @@
         .then(response => response.text())
         .then(html => {
             document.getElementById("nav-placeholder").innerHTML = html;
+            hideNavElements()
         });
-
         fetch("../Shared/footer.html")
         .then(response => response.text())
         .then(html => {
             document.getElementById("footer-placeholder").innerHTML = html;
+            const footer = document.querySelector(".year");
+            footer.innerHTML = new Date().getFullYear();
         });
         
     </script>
-    <script type="module" src="/Scripts/custom/navbar.js"></script>
+    <script src="/Scripts/custom/navbar.js"></script>
 </head>
 
 <body class="btc-body">
