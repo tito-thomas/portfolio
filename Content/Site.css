@@ -93,7 +93,7 @@ p{
     }
 }
 
-@media (max-width:1600px){
+@media((min-width:1000px) and (max-width:1600px)){
     .bio{
         scale:0.8;   
         transform: translateY(-15rem);      
@@ -262,6 +262,17 @@ p{
     }
 
 }
+
+}
+
+@media (max-width:400px){
+    .coverbg{
+        height: 60%;
+      
+    }
+
+}
+
 @keyframes coverslide{
     0%{
         transform:translateX(100%);
@@ -367,6 +378,7 @@ p{
 .covertext{
     margin-top:5%;
 }
+
 .coverbg > *{
     text-align:center;
     color:white;
@@ -377,6 +389,12 @@ p{
     }
 }
 
+@media (max-width:400px){
+    .coverbg{
+        transform: translateY(-5rem);
+    }
+}
+
 .coverbg h4 {
     font-size: 130px;
     font-family: Staatliches;
@@ -384,6 +402,12 @@ p{
 @media (max-width:576px){
     .coverbg h4{
         font-size: 80px;
+    }
+}
+
+@media (max-width:400px){
+    .coverbg h4{
+        font-size: 60px;
     }
 }
 
@@ -484,7 +508,7 @@ p{
     column-gap: 6%;
     transform: translateY(25em);
 }
-@media(max-width:1600px){
+@media((min-width:1000px) and (max-width:1600px)){
     .proj1 {
         scale: 0.8;
     }      
@@ -565,7 +589,7 @@ p{
     transition:0.9s ease-in-out;
     z-index:0;
 }
-@media(max-width:1600px){
+@media((min-width:1000px) and (max-width:1600px)){
     .skills-title{
         font-size: 150px;
     }
@@ -599,7 +623,7 @@ p{
     overflow: hidden;
 
 }
-@media(max-width:1600px){
+@media((min-width:1000px) and (max-width:1600px)){
     .skills-container{
         scale: 0.7;
         transform: translateY(-20rem);
@@ -742,7 +766,7 @@ p{
     column-gap: 8%;
 }
 
-@media(max-width:1600px){
+@media((min-width:1000px) and (max-width:1600px)){
     .proj2 {
        column-gap:0;
     }      
@@ -761,7 +785,7 @@ p{
     margin-top: 5%;
 }
 
-@media(max-width:1600px){
+@media((min-width:1000px) and (max-width:1600px)){
     .proj2-desc{
         scale: 0.8;
 
@@ -787,7 +811,7 @@ p{
     width: 920px;
     margin-top: 2%;
 }
-@media(max-width:1600px){
+@media((min-width:1000px) and (max-width:1600px)){
     .proj2 .mac2{
         scale: 0.75;
         transform: translateY(2rem);
@@ -833,7 +857,7 @@ p{
     border-top-right-radius: 2%;
     border-top-left-radius: 2%;
 }
-@media(max-width:1600px){
+@media((min-width:1000px) and (max-width:1600px)){
     .slidecover2{
         transform: translate(80rem, 15rem);
         scale: 0.83;   }
