@@ -255,13 +255,11 @@ p{
 }
 
 @media (max-width:576px){
-    .coverbg{
+    .coverbg{                   
         
         min-height: 40%;
       
     }
-
-}
 
 }
 

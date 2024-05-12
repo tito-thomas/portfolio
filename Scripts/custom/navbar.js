@@ -2,15 +2,14 @@
 //wait for all page elements to load before displaying
 document.addEventListener("DOMContentLoaded", function() { 
     const page = document.querySelector("body")
-const content = document.querySelector(".body-content")
+    const content = document.querySelector(".body-content")
     page.style.visibility = "visible";
 });
 
 
 function hideNavElements() {
     const elementsToHide = document.querySelectorAll(".only-home");
-    console.log(elementsToHide);
-    var url = document.URL.split("/");
+    let url = document.URL.split("/");
     //if we are not on home page
     if (url.length > 4) {
         elementsToHide.forEach(i => i.style.display = "none");
