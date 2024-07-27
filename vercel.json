@@ -1,10 +1,5 @@
 {
     "version":2,
-    "builds":[{"src": "./**/*", "use": "@vercel/node"}],
-    "routes":[
-    {"src": "/(.*)", "dest": "/index.js"},
-    { "src": "/Scripts/custom(.*)", "dest": "/Scripts/custom/$1" },
-    { "src": "/Content(.*)", "dest": "/Content/$1" }
-],
+    "builds":[{"src": "./index.js", "use": "@vercel/node"}],
     "installCommand": "npm install"
 }
