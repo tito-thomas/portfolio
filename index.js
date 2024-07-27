@@ -2,7 +2,6 @@ const express = require('express');
 const app = express();
 const path = require('path');
 const router = require('./router');
-const functions = require('firebase-functions');
 const { exec } = require('child_process');
 
 
@@ -26,7 +25,4 @@ app.listen(5000, () => {
 //   }
 //   console.log(`Chrome opened with URL: ${url}`);
 // });
-
-
-exports.app = functions.https.onRequest(app);
  
