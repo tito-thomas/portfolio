@@ -11,7 +11,7 @@ router.get("/", function (req, res) {
 
 router.get("/hello", (req, res) => {
     console.log('Received request for /api/hello');
-    res.send('Hello from Express!');
+    return 'Hello from Express!';
   });
 
 router.get("/anime-project", function (req, res) {
