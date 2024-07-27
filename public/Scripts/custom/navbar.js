@@ -11,7 +11,7 @@ function hideNavElements() {
     const elementsToHide = document.querySelectorAll(".only-home");
     let url = document.URL.split("/");
     //if we are not on home page
-    if (url.length > 4) {
+    if (url.includes("anime-project") || url.includes("bitcoin-project")) {
         elementsToHide.forEach(i => i.style.display = "none");
     }
 };

@@ -5,20 +5,22 @@ const router = express.Router();
 
 
 router.get("/", function (req, res) {
-    console.log("Route hit")
-    const filePath = path.join(__dirname, 'index.html');
+    const filePath = path.join(__dirname, '../public/index.html');
     res.sendFile(filePath);
 });
 
+router.get("/hello", (req, res) => {
+    console.log('Received request for /api/hello');
+    res.send('Hello from Express on Firebase!');
+  });
+
 router.get("/anime-project", function (req, res) {
-    console.log("Route hit")
-    const filePath = path.join(__dirname, '/Views/Home/AnimeProject.html');
+    const filePath = path.join(__dirname, '../public/Views/Home/AnimeProject.html');
     res.sendFile(filePath);
 });
 
 router.get("/bitcoin-project", function (req, res) {
-    console.log("Route hit")
-    const filePath = path.join(__dirname, '/Views/Home/BitcoinProject.html');
+    const filePath = path.join(__dirname, '../public/Views/Home/BitcoinProject.html');
     res.sendFile(filePath);
 });
 
@@ -26,14 +28,12 @@ router.get("/bitcoin-project", function (req, res) {
 //Header and footer
 
 router.get("/Shared/navbar.html", function (req, res) {
-    console.log("Route hit")
-    const filePath = path.join(__dirname, '/Views/Shared/navbar.html');
+    const filePath = path.join(__dirname, '../public/Views/Shared/navbar.html');
     res.sendFile(filePath);
 });
 
 router.get("/Shared/footer.html", function (req, res) {
-    console.log("Route hit")
-    const filePath = path.join(__dirname, '/Views/Shared/footer.html');
+    const filePath = path.join(__dirname, '../public/Views/Shared/footer.html');
     res.sendFile(filePath);
 });
   
