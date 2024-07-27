@@ -9,6 +9,7 @@ const url = 'http://localhost:3000';
 
 app.use(express.static(path.join(__dirname, '/')));
 app.use('Views/Shared', express.static(path.join(__dirname, '/Shared')));
+app.use('Scripts/custom', express.static(path.join(__dirname, '/custom')));
 app.use('/', router)
 
 console.log("RUNNING")
