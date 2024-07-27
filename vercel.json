@@ -13,14 +13,5 @@
         {"src": "./**/*.js","use": "@vercel/node"}
 
     ],
-    "routes":[
-    {"src": "/(.*)", "dest": "api/index.js"},
-    {
-        "src": "/public/(.*)",
-        "dest": "/public/$1"
-      },
-    { "src": "public/**/*", "dest": "public/Scripts/custom/$1" },
-    { "src": "/Content(.*)", "dest": "/Content/$1" }
-],
     "installCommand": "npm install"
 }
