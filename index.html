@@ -5,9 +5,10 @@
 <head>
     <title>Home - Tito Thomas</title>
 
-    <link rel="stylesheet" type="text/css" href="Content/Site.css" />
-    <link rel="stylesheet" type="text/css" href="Content/anime.css" />
-    <link rel="stylesheet" type="text/css" href="Content/bitcoin.css" />
+    <link rel="stylesheet" type="text/css" href="/Content/Site.css/" />
+    <link rel="stylesheet" type="text/css" href="/Content/anime.css/" />
+    <link rel="stylesheet" type="text/css" href="/Content/bitcoin.css/" />
+
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Staatliches" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Aldrich" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" />
@@ -23,14 +24,14 @@
     <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script> 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 
-    <script defer type="module" src="public/Scripts/custom/navbar.js"></script>
+    <script defer type="module" src="/Scripts/custom/navbar.js"></script>
     <script type="module" src="https://ik.imagekit.io/contentcdn/Scripts/custom/animations.js"></script>
-    <script type="module" src="public/Scripts/custom/slideshow.js"></script>
+    <script type="module" src="/Scripts/custom/slideshow.js"></script>
     
  
     <script>
 
-    fetch("public/Views/Shared/navbar.html")
+    fetch("/Views/Shared/navbar.html")
         .then(response => response.text())
         .then(html => {
             document.getElementById("nav-placeholder").innerHTML = html;

@@ -2,12 +2,12 @@
   "name": "portfolio-deploy",
   "version": "1.0.0",
   "description": "personal portfolio",
-  "main": "index.js",
+  "main": "api/index.js",
   "engines": {
     "node": "18"
   },
   "scripts": {
-    "start": "node index.js"
+    "start": "node api/index.js"
   },
   "repository": {
     "type": "git",

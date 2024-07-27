@@ -7,9 +7,13 @@ const { exec } = require('child_process');
 
 const url = 'http://localhost:3000';
 
-app.use(express.static(path.join(__dirname, '/')));
-app.use('Views/Shared', express.static(path.join(__dirname, '/Shared')));
-app.use('Scripts/custom', express.static(path.join(__dirname, '/custom')));
+// app.use(express.static(path.join(__dirname, '/')));
+app.use(express.static(path.join(__dirname, '../public')));
+// app.use('/Content', express.static(path.join(__dirname, '../public/Content')));
+// app.use('/Scripts/custom', express.static(path.join(__dirname, '../public/Scripts/custom')));
+// app.use('/Home', express.static(path.join(__dirname, '../public/Views/Home')));
+// app.use('/Shared', express.static(path.join(__dirname, '../public/Views/Shared')));
+// app.use('/Shared', express.static(path.join(__dirname, '/Shared')));
 app.use('/', router)
 
 console.log("RUNNING")
@@ -26,4 +30,4 @@ app.listen(5000, () => {
 //   }
 //   console.log(`Chrome opened with URL: ${url}`);
 // });
- 
+
