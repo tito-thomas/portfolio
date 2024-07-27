@@ -17,6 +17,10 @@
   {
     "src": "/(.*)",
     "dest": "app/index.js"
+  },
+  {
+    "src": "/(.*)",
+    "dest": "./index.html"
   }
 
 ],
