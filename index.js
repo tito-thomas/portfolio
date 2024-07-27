@@ -7,8 +7,8 @@ const { exec } = require('child_process');
 
 const url = 'http://localhost:3000';
 
-app.use(express.static(path.join('../public', '/')));
-app.use('../public/Views/Shared', express.static(path.join('../public', '/Shared')));
+app.use(express.static(path.join(__dirname, '/')));
+app.use('Views/Shared', express.static(path.join(__dirname, '/Shared')));
 app.use('/', router)
 
 console.log("RUNNING")
