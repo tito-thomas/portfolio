@@ -900,8 +900,9 @@ p{
 }
 
 p::selection, div::selection,
-.bold-text::selection, a::selection{
+.bold-text::selection, a::selection, h4::selection,br::selection{
     background: #7459ff;
+    color:white;
 }
 
 .bold-text{
