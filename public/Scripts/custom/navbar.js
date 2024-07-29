@@ -1,5 +1,5 @@
 ﻿
-//wait for all page elements to load before displaying
+//wait for all page elements to load before displaying content
 document.addEventListener("DOMContentLoaded", function() { 
     const page = document.querySelector("body")
     const content = document.querySelector(".body-content")
@@ -20,23 +20,13 @@ function navScrollStyling() {
     const navbar = document.querySelector("#mynav")
     navbar.style.transition = "0.4s"
     if (window.scrollY != 0) {
-        // navbar.style.backgroundColor = "rgb(3, 36, 86, 0.85)";
-        // navbar.style.backdropFilter = "blur(5px)"
+        navbar.style.backgroundColor = "rgb(3, 36, 86, 0.85)";
+        navbar.style.backdropFilter = "blur(5px)"
 
-        if(navbar.classList.contains("navbar-atTop")){
-            navbar.classList.remove("navbar-atTop")
-        }
-        navbar.classList.add("navbar-scrollDown")
-        
     }
     else {
-        // navbar.style.backgroundColor = "transparent"
-        // navbar.style.backdropFilter = ""
-
-        if(navbar.classList.contains("navbar-scrollDown")){
-            navbar.classList.remove("navbar-scrollDown")
-        }
-        navbar.classList.add("navbar-atTop")
+        navbar.style.backgroundColor = "transparent"
+        navbar.style.backdropFilter = ""
     }
  }
 
