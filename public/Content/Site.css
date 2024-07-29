@@ -4,7 +4,6 @@
 }
 
 body {
-    visibility: hidden;
     margin-top: 0;
     flex-direction: column;
     color: #4f4a4a;

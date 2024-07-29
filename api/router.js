@@ -9,11 +9,6 @@ router.get("/", function (req, res) {
     res.sendFile(filePath);
 });
 
-router.get("/hello", (req, res) => {
-    console.log('Received request for /api/hello');
-    return 'Hello from Express!';
-  });
-
 router.get("/anime-project", function (req, res) {
     const filePath = path.join(__dirname, '../public/Views/Home/AnimeProject.html');
     res.sendFile(filePath);
