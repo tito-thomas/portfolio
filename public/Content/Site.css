@@ -189,6 +189,16 @@ p{
     float:right;
 }
 
+.navbar-scrollDown{
+   background-color:rgb(3, 36, 86, 0.85);
+   backdrop-filter:blur(5px)
+}
+
+.navbar-atTop{
+    background-color: transparent;
+    backdrop-filter: "";
+}
+
 .material-icons {
     padding-left: 10px;
     transform: translateY(5px);
