@@ -27,7 +27,7 @@
 
 @media(max-width:576px){
     .anime-title{
-        font-size:55px;
+        font-size:45px;
     }
 }
 
@@ -40,16 +40,16 @@
 
 @media(max-width:576px){
     .anime-heading{
-        margin-top: 5rem;
+        /* margin-top: 5rem; */
         font-size: 50px;
-        margin-left: 5rem;
+        /* margin-left: 5rem; */
     }
 }
 
 @media(max-width:576px){
     .preprocessing-title{
         font-size: 45px;
-        padding-left: 5rem;
+        /* padding-left: 5rem; */
     }
 }
 
@@ -85,9 +85,48 @@
     flex-direction:column;
 }
 
-.arch-paragraph {
 
+@media(max-width:576px){
+    .box1{
+        height:400px
+
+    }
 }
+
+@media(max-width:576px){
+    .box2{
+        height:800px
+
+    }
+}
+
+@media(max-width:576px){
+    .box3{
+        height:900px
+
+    }
+}
+
+@media(max-width:576px){
+    .box4{
+        height:1000px
+
+    }
+}
+
+@media(max-width:576px){
+    .box5{
+        height:1400px;
+
+    }
+}
+@media(max-width:576px){
+    .box6{
+        height:500px
+
+    }
+}
+
 .large-paragraph {
     width: 40%;
     color: #ffffff;
@@ -102,7 +141,7 @@
     .large-paragraph{
         width: 80%;
         font-size: 15px;
-        margin-top: -5rem;
+        /* margin-top: -5rem; */
         margin-left: 4rem;
     }
 }
@@ -110,7 +149,7 @@
 
 @media(max-width:576px){
     .hybrid-title{
-        transform: translate(0, -85rem);
+        /* transform: translate(0, -85rem); */
         margin: auto;
         font-size:45px;
     }
@@ -118,7 +157,7 @@
 
 @media(max-width:576px){
     .hybrid-paragraph{
-        transform: translate(-2rem,-75rem);
+        /* transform: translate(-2rem,-75rem); */
         width: 90%;
     }
 }
@@ -145,14 +184,20 @@
 @media(max-width:576px){
     .animeimg{
         scale: 0.4;
-        transform: translate(-70rem,-150rem);
+        transform: translate(-70rem, -40rem);
     }
 }
 
 @media(max-width:576px){
+    .c4{
+        scale: 0.43;
+        transform: translate(-60rem, -50rem);
+    }
+}
+@media(max-width:576px){
     .hybrid-img{
         scale: 0.6;
-        transform: translate(-16rem,-150rem);
+        transform: translate(-16rem,-30rem);
     }
 }
 
@@ -173,8 +218,9 @@
     .processing-container{
         grid-template-columns: repeat(1,1fr);
         margin: inherit;
-        transform: translateY(-100rem);
+        /* transform: translateY(-100rem); */
         overflow:visible;
+        height:1300px;
     }
 }
 
@@ -184,25 +230,26 @@
 }
 
 .covercode {
-    height: 1100px;/*450px*/
+    height: 1100px;
     width: 100%;
-    position: relative;
     overflow: hidden;
-    position: absolute;
     top: 200%;
     left: 0;
     background: #03033300;
     opacity: 12%;
     z-index: -1;
+    position: absolute;
 }
 
 @media(max-width:576px){
     .covercode{
+        position: relative;
+        transform: translateY(-1700px);
         opacity: 20%;
-        transform: translate(-14rem, 10rem);
-        width: 800px;
+        transform: translate(-15rem, -40rem);
+        width: 100vh;
         scale: 2;
-        height: 200px;
+        height: 150px;
     }
 }
 
@@ -233,6 +280,7 @@
 
 .pre-paragraph {
     width: 57%;
+    transform:translateY(2rem);
 }
 
 .embed-paragraph {
@@ -257,7 +305,8 @@
 }
 @media(max-width:576px){
     .gen-rec{
-    transform: translateY(-120rem);
+    /* transform: translateY(-120rem); */
+    height:700px;
     }
 }
 
@@ -269,8 +318,8 @@
 
 @media(max-width: 576px){
     .gen-img{
-        scale: 0.24;
-        transform: translateY(-50rem);
+        scale: 0.28;
+        /* transform: translateY(-50rem); */
     }
 }
 
@@ -302,13 +351,14 @@
     border-radius: 10px;
     box-shadow: 1px 1px 20px black;
     margin: 5rem;
-    scale:0.7;
+    scale:0.9;
 }
 
 @media(max-width:576px){
 
     .prep-img {
-        transform: translateY(-20rem);
+        transform: translateY(-10rem);
+        scale:0.7;
     }
 }
 
@@ -379,13 +429,13 @@
 @media(max-width:576px){
     .eval-paragraph{
         width: 80%;
-        transform: translate(0,-140rem);
+        transform: translate(0,0);
     }
 }
 
 @media(max-width:576px){
     .eval-paragraph2{
-        transform: translate(0,-195rem);
+        transform: translate(0,-50rem);
     }
 }
 
@@ -399,7 +449,7 @@
 @media(max-width:576px){
     .eval-img{            
         scale: 0.45;
-        transform: translate(-46rem,-365rem);
+        transform: translate(-46rem,-50rem);
     }
 }
 
@@ -413,7 +463,7 @@
 
 @media(max-width:576px){
     .eval-code{          
-        transform: translateY(-198rem);
+        transform: translateY(-38rem);
         scale: 0.9;
     }
 }
@@ -435,13 +485,13 @@
 @media(max-width:576px){
     .gallery-cover{
         scale: 0.29;
-        transform: translate(-125rem,-700rem);
+        transform: translate(-125rem,-80rem);
     }
 }
 
 @media(max-width:576px){
     .gallery-heading{
-        transform: translate(-5rem,-175rem);
+        /* transform: translate(-5rem,0rem); */
     }
 }
 
@@ -451,6 +501,13 @@
     column-gap: 10rem;
     box-shadow: 1px 1px 20px;
     border-radius: 10px;
+}
+
+@media(max-width:576px){
+    .gallery-container{
+        scale: 1.2;
+        transform: translateX(7rem);
+    }
 }
 
 .nav-buttons {
@@ -464,8 +521,14 @@
 .next {
     rotate: 270deg;
     transition: 0.2s ease;
-
 }
+
+@media(max-width:576px){
+    .next{
+        transform:translateY(180px)
+    }
+}
+
 .next:hover{
     transform:translateY(0.8rem);
     cursor:pointer;
@@ -507,12 +570,12 @@
 @media(max-width:576px){
     .tech-stack{
         scale: 0.6;
-        transform: translate(-21rem,-45rem);
+        transform: translate(-20rem, -25rem);
         column-gap: 0;
-        grid-template-columns: repeat(2,0.5fr);
+        grid-template-columns: repeat(2, 0.5fr);
         row-gap: 15rem;
         padding: 5rem;
-        width: 70rem;
+        overflow:visible;
     }
 }
 
@@ -529,7 +592,7 @@
 
 @media(max-width:576px){
     .sys{
-    transform: translateY(-50rem);
+    /* transform: translateY(-50rem); */
     margin: auto;
     font-size: 55px;
     }
@@ -539,7 +602,7 @@
     .sys-paragraph{
         width: 85%;
         margin: auto;
-        transform: translate(0rem,-45rem);
+        /* transform: translate(0rem,-45rem); */
         font-size: 15px;
     }
 }
@@ -577,14 +640,14 @@
 
 @media(max-width:576px){
     .data-source{
-        transform: translateY(-20rem);
-            font-size: 15px;
+        /* transform: translateY(-20rem); */
+        font-size: 15px;
     }
 }
 
 @media(max-width:576px){
     .perf-title{
-        transform: translate(-5rem,-140rem);
+        /* transform: translate(-5rem,0rem); */
         font-size:45px;
     }
 }

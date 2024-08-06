@@ -573,7 +573,7 @@ p{
 @media(max-width:576px){
     .section-title {
         font-size: 140px;
-        transform: translate(-5rem,-10rem);
+        /* transform: translate(-5rem,-10rem); */
     }      
 }
 
