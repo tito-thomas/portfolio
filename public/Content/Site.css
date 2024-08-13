@@ -257,15 +257,50 @@ p{
         min-height: 40%;
       
     }
+}
 
+.coverbg > *{
+    text-align:center;
+    color:white;
+}
+@media (max-width:576px){
+    .coverbg > *{
+    padding: 25px;
+    }
 }
 
 @media (max-width:400px){
     .coverbg{
-        height: 60%;
-      
+        /* transform: translateY(-5rem); */
+        /* height: 60%; */
     }
+}
 
+.coverbg h4 {
+    font-size: 130px;
+    font-family: Staatliches;
+}
+@media (max-width:576px){
+    .coverbg h4{
+        font-size: 80px;
+    }
+}
+
+@media (max-width:400px){
+    .coverbg h4{
+        font-size: 60px;
+    }
+}
+
+.coverbg p {
+    font-size: 36px;
+    font-family: Poppins;
+}
+
+@media (max-width:576px){
+    .coverbg p{
+        font-size: 22px;
+    }
 }
 
 @keyframes coverslide{
@@ -372,49 +407,6 @@ p{
 
 .covertext{
     margin-top:5%;
-}
-
-.coverbg > *{
-    text-align:center;
-    color:white;
-}
-@media (max-width:576px){
-    .coverbg > *{
-    padding: 25px;
-    }
-}
-
-@media (max-width:400px){
-    .coverbg{
-        transform: translateY(-5rem);
-    }
-}
-
-.coverbg h4 {
-    font-size: 130px;
-    font-family: Staatliches;
-}
-@media (max-width:576px){
-    .coverbg h4{
-        font-size: 80px;
-    }
-}
-
-@media (max-width:400px){
-    .coverbg h4{
-        font-size: 60px;
-    }
-}
-
-.coverbg p {
-    font-size: 36px;
-    font-family: Poppins;
-}
-
-@media (max-width:576px){
-    .coverbg p{
-        font-size: 22px;
-    }
 }
 
 .row{
