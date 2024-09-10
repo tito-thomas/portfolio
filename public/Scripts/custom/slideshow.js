@@ -81,7 +81,6 @@ document.addEventListener('DOMContentLoaded', () => {
         // ------------- Slide for embed slideshow --------
         const embedButton = document.querySelector(".embed");
         embedButton.addEventListener("click", () => {
-            // console.log("test");
 
             const embedImages = document.querySelectorAll(".embedding-img");
 
