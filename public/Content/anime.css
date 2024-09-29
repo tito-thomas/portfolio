@@ -525,12 +525,26 @@
     }
 }
 
+@media(max-width:360px){
+    .gallery-container{
+        scale: 1.1;
+        transform: translateX(3rem);
+    }
+}
+
 .nav-buttons {
     display: flex;
     justify-content: center;
     column-gap: 112rem;
     transform: translateY(-35rem);
 
+}
+
+@media(max-width:360px){
+    .nav-buttons{          
+        column-gap: 102rem;
+        padding-right: 12rem;
+    }
 }
 
 .next {

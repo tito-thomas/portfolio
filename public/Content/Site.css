@@ -21,6 +21,34 @@ body {
     overflow: hidden;
 }
 
+.covertext h4 {
+    font-size: 130px ;
+    font-family: Staatliches;
+}
+@media (max-width:576px){
+    .covertext h4{
+        font-size: 80px;
+    }
+}
+
+@media (max-width:400px){
+    .covertext h4{
+        font-size: 60px;
+    }
+}
+
+.covertext p {
+    font-size: 36px;
+    font-family: Poppins;
+}
+
+@media (max-width:576px){
+    .covertext p{
+        font-size: 22px;
+    }
+}
+
+
 /* Override the default bootstrap behavior where horizontal description lists 
    will truncate terms that are too long to fit in the left column 
 */
@@ -276,32 +304,6 @@ p{
     }
 }
 
-.coverbg h4 {
-    font-size: 130px;
-    font-family: Staatliches;
-}
-@media (max-width:576px){
-    .coverbg h4{
-        font-size: 80px;
-    }
-}
-
-@media (max-width:400px){
-    .coverbg h4{
-        font-size: 60px;
-    }
-}
-
-.coverbg p {
-    font-size: 36px;
-    font-family: Poppins;
-}
-
-@media (max-width:576px){
-    .coverbg p{
-        font-size: 22px;
-    }
-}
 
 @keyframes coverslide{
     0%{
@@ -789,12 +791,6 @@ p{
     .proj2 img {
         transform: translate(-200rem, 100rem);
         scale: 0.35;
-    }
-}
-
-@media (max-width:360px){
-    .proj2 img {
-        transform: translate(-90rem, -80rem);
     }
 }
 
