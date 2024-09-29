@@ -508,7 +508,7 @@ p{
     }      
 }
 
-@media(max-width:1600px){
+@media (min-width:1000px) and (max-width:1600px){
     .proj1 {
         scale: 0.9;
     }      
