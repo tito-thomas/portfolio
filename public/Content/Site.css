@@ -508,6 +508,12 @@ p{
     }      
 }
 
+@media(max-width:1600px){
+    .proj1 {
+        scale: 0.85;
+    }      
+}
+
 .proj1 img{
     transform: translateY(-5%);
     scale: 0.9;
