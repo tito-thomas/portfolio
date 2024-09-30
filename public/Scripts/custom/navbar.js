@@ -17,18 +17,17 @@ function hideNavElements() {
 };
 
 function navScrollStyling() {
-   
-        const navbar = document.querySelector("#mynav")
-        navbar.style.transition = "0.4s"
-        if (window.scrollY != 0) {
-            navbar.style.backgroundColor = "rgb(3, 36, 86, 0.85)";
-            navbar.style.backdropFilter = "blur(5px)"
+    const navbar = document.querySelector("#mynav")
+    navbar.style.transition = "0.4s"
+    if (window.scrollY != 0) {
+        navbar.style.backgroundColor = "rgb(3, 36, 86, 0.85)";
+        navbar.style.backdropFilter = "blur(5px)"
 
-        }
-        else {
-            navbar.style.backgroundColor = "transparent"
-            navbar.style.backdropFilter = ""
-        }
+    }
+    else {
+        navbar.style.backgroundColor = "transparent"
+        navbar.style.backdropFilter = ""
+    }
     
  }
  window.addEventListener("scroll", navScrollStyling);
