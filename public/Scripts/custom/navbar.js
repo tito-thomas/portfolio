@@ -17,7 +17,7 @@ function hideNavElements() {
 };
 
 function navScrollStyling() {
-    if(screen.width > 768){
+   
         const navbar = document.querySelector("#mynav")
         navbar.style.transition = "0.4s"
         if (window.scrollY != 0) {
@@ -29,7 +29,7 @@ function navScrollStyling() {
             navbar.style.backgroundColor = "transparent"
             navbar.style.backdropFilter = ""
         }
-    }
+    
  }
  window.addEventListener("scroll", navScrollStyling);
 
