@@ -532,6 +532,14 @@
     }
 }
 
+@media(max-width:390px){
+    .gallery-container{
+        scale: 1.15;
+        transform: translateX(5rem);
+    }
+}
+
+
 .nav-buttons {
     display: flex;
     justify-content: center;
@@ -544,6 +552,13 @@
     .nav-buttons{          
         column-gap: 102rem;
         padding-right: 12rem;
+    }
+}
+
+@media(max-width:390px){
+    .nav-buttons{          
+        column-gap: 110rem;
+        padding-right: 8rem;
     }
 }
 
