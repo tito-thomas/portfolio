@@ -211,6 +211,18 @@ p{
     font-size:25px;
 }
 
+.navCollapse{
+    margin-left: -15px !important;
+    display: flex;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    justify-content: center;
+    background-color: rgb(14 28 69);
+
+}
+
+.
 /* .navbar-nav{
     float:right;
 } */

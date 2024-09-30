@@ -18,6 +18,18 @@
     <title>Bitcoin Trading Simulator</title>
 
     <script>
+
+        function toggleNavCollapse(){
+            const collapseNav = document.querySelector(".navbar-collapse");
+            const navButton = document.querySelector(".navbutton");
+            if(!collapseNav.classList.contains("navCollapse")){
+                collapseNav.classList.add("navCollapse");
+                navButton.style.zIndex = 1000;
+            }
+            else{
+                collapseNav.classList.remove("navCollapse")
+            }
+        }
         fetch("../Shared/navbar.html")
         .then(response => response.text())
         .then(html => {
