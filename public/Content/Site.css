@@ -127,7 +127,6 @@ p{
     } 
 }
 .selfie {
-    width: 600px;
     height: 500px;
     float: right;
     animation-name: selfie;
