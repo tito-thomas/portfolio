@@ -135,7 +135,8 @@ p{
 }
 @media (max-width:576px){
     .selfie{
-        scale:1;
+        width: 464px;
+        height: 600px;
     }
 }
 /*@keyframes selfie{
@@ -612,7 +613,7 @@ p{
 @media(max-width:576px){
     .skills {
         scale: 0.4;
-        transform: translate(-80rem,-150rem);
+        transform: translate(-80rem, -170rem);
     }
 }
 .skills-container {
